@@ -1,1 +1,1 @@
-# Astrogames
+# AstroGames

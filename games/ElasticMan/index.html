@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElasticManss</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../../astro.jpg">
+</head>
+<body bgcolor="black">
+    <div style="
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: 100;
+    ">
+        <div id="navbar" >
+            <a href="../../index.html" id="home-btn">Home</a>
+            <button id="secret-btn"><a href="../../secret.html">???</a></button>
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <p style="
+            color: white;
+            position: absolute;
+            top: 0;
+            margin-left: 50px;
+            font-family: 'Comfortaa', sans-serif; 
+        ">Astro Games</p>
+        <img src="../../astro.jpg" alt="astro" style="width: 50px; position: absolute; top: 0;">
+    </div>
+
+    <div style="
+        width: 100%;
+        height: 340px;
+        background-image: url('../../stars.jpg');
+        background-size: cover;
+    ">
+        <h1 style="
+            color: white;
+            text-align: center;
+            font-family: 'Comfortaa', sans-serif;
+            line-height: 340px;
+        ">Elastic Man</h1>
+    </div>
+
+    <center><button style="
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 5px;
+        width: 300px;
+        height: 50px;
+        font-size: large;
+        font-family: 'Comfortaa', sans-serif;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    ">
+    <a href="../../index.html" style="
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        width: 300px;
+        height: 50px;
+    ">Home</a>
+    </button></center>
+
+    <center>
+    <iframe id="embededGame" style="width: 1280px; height: 786px; border: 0;"
+    src="https://d21u3ic0kp9e91.cloudfront.net/elasticman/0/index.html"></iframe>
+    <div style="
+        background: rgb(41, 41, 41);
+        width: 80%;
+        height: 35px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        align-items: center;
+        display: flex;
+    "><i onclick="goFullscreen('embededGame'); return false"  id="fullscreen-btn" style="
+        float: right;
+        color: white;
+        font-size: 25px;
+        margin-right: 25px;
+        top:50%;
+        margin-left: 90%;
+    "class="fa-solid fa-expand"></i></div>
+    </center>
+
+
+    <script src="../../fullscreen.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Inter:wght@100&family=Maven+Pro&family=Pixelify+Sans&display=swap');
+
+body
+{
+    padding: 0px;
+    margin: 0;
+}
+
+#title
+{
+    height: 50px;
+    font-family: 'Pixelify Sans', sans-serif;
+
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+#astro
+{
+    /* margin-bottom: 100px; */
+    position: relative;
+    margin-right: 50px;
+}
+
+#spaccer
+{
+    margin-bottom: 50px;
+}
+
+/* NavBar Section */
+
+#navbar
+{
+    background: rgb(41, 41, 41);
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    margin: 0%;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#secret-btn
+{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    opacity: 0;
+}
+
+#search
+{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#game-requests-btn
+{
+    color: white;
+    background-color: black;
+    border-color: white;
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+    font-size: large;
+    font-family: 'Comfortaa', sans-serif;
+    margin-top: 50px;
+    transition: 0.2s;
+}
+
+#game-requests-btn:hover
+{
+    color: red;
+    animation: size-up 0.2s;
+    transform: scale(1.08);
+}
+
+#home-btn
+{
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.fullScreen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#games #games-ul li
+{
+    margin-right: 50px;
+}
+
+#games #games-ul li a img
+{
+    border-radius: 45px;
+    transition: 0.2s;
+}
+
+#games #games-ul li a img:hover
+{
+    animation: size-up 0.2s;
+    transform: scale(1.08);
+}
+
+#fullscreen-btn
+{
+    transition: 0.2s;
+}
+
+#fullscreen-btn:hover
+{
+    animation: size-up 0.2s;
+    transform: scale(1.08);
+}
+
+/*    */
