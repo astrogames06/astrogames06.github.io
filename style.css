@@ -62,6 +62,13 @@ body
     border: none;
     font-size: 20px;
     margin-right: 20px;
+    transition: 0.2s;
+}
+
+#search:hover
+{
+    animation: size-up 0.2s;
+    transform: scale(1.2);
 }
 
 #game-requests-btn
@@ -91,6 +98,13 @@ body
     font-family: 'Comfortaa', sans-serif;
     font-weight: bold;
     text-decoration: none;
+    transition: 0.2s;
+}
+
+#home-btn:hover
+{
+    animation: size-up 0.2s;
+    transform: scale(1.2);
 }
 
 .fullScreen {
