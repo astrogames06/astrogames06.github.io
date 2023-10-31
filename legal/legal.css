@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+html,
+body {
+  font-family: var(--font-family);
+  user-select: none;
+  color: #fff;
+  background-color: #171717;
+  font-size: 12.5px;
+  letter-spacing: 0.25px;
+}
+
+.divider-content {
+  width: 300px;
+}
+
+.divider {
+  border-bottom: #494949 solid 2px;
+  width: 100%;
+}
+.center {
+  text-align: center;
+}
+
+.left-align {
+  display: inline-block;
+  text-align: left;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
