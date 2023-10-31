@@ -12,6 +12,11 @@ body {
   letter-spacing: 0.25px;
 }
 
+#heart
+{
+  color: red;
+}
+
 .divider-content {
   width: 300px;
 }
