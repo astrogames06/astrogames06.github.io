@@ -11,38 +11,8 @@
     <link rel="icon" type="image/x-icon" href="../../astro.jpg">
 </head>
 <body bgcolor="black">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2939348888494004"
-     crossorigin="anonymous"></script>
-    <!-- sides of games -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2939348888494004"
-         data-ad-slot="1518187149"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    <div style="
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0;
-        z-index: 100;
-    ">
-        <div id="navbar" >
-            <a href="../../index.html" id="home-btn">Home</a>
-            <button id="secret-btn"><a href="../../secret.html">???</a></button>
-            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <p style="
-            color: white;
-            position: absolute;
-            top: 0;
-            margin-left: 50px;
-            font-family: 'Comfortaa', sans-serif; 
-        ">Astro Games</p>
-        <img src="../../astro.jpg" alt="astro" style="width: 50px; position: absolute; top: 0;">
-    </div>
+    <script src="../../custom-elms.js"></script>
+    <nav-bar></nav-bar>
 
     <div style="
         width: 100%;
@@ -58,47 +28,13 @@
         ">Eggy Car</h1>
     </div>
 
-    <center><button style="
-        color: rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
-        border: none;
-        border-radius: 5px;
-        width: 300px;
-        height: 50px;
-        font-size: large;
-        font-family: 'Comfortaa', sans-serif;
-        margin-top: 50px;
-        margin-bottom: 100px;
-    ">
-    <a href="../../index.html" style="
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        width: 300px;
-        height: 50px;
-    ">Home</a>
-    </button></center>
-
+    <home-btn></home-btn>
+    <ad-elm></ad-elm>
     <center>
-    <iframe id="embededGame" style="width: 1280px; height: 786px; border: 0;"
-    src="https://eggycarunblocked.github.io/"></iframe>
-    <div style="
-        background: rgb(41, 41, 41);
-        width: 80%;
-        height: 35px;
-        border-radius: 5px;
-        margin-bottom: 5px;
-        align-items: center;
-        display: flex;
-    "><i onclick="goFullscreen('embededGame'); return false"  id="fullscreen-btn" style="
-        float: right;
-        color: white;
-        font-size: 25px;
-        margin-right: 25px;
-        top:50%;
-        margin-left: 90%;
-    "class="fa-solid fa-expand"></i></div>
+        <iframe id="embededGame" style="width: 1280px; height: 786px; border: 0;"
+        src="https://ubg98.github.io/EggyCar/"></iframe>
+        <opt-elm></opt-elm>
     </center>
-
 
     <script src="../../fullscreen.js"></script>
 </body>
