@@ -18,6 +18,12 @@ body {
   font-weight: bold;
 }
 
+h1, h2, h3
+{
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+}
+
 #heart
 {
   color: red;
