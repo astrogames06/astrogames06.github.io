@@ -6,6 +6,12 @@ body
     margin: 0;
 }
 
+h1, h2, h3
+{
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+}
+
 #title
 {
     height: 50px;
@@ -69,7 +75,8 @@ p
     margin-right: 20px;
     transition: 0.2s;
     z-index: 10000;
-    filter: invert(96%) sepia(97%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
+    fill: white;
+    color: white;
 }
 
 #search:hover
