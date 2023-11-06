@@ -66,6 +66,7 @@ class MyCustomElementTerms extends HTMLElement {
         shadowRoot.innerHTML = `
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="legal/legal.css">
+        <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
         <footer>
         <div class="footer-content">
           <p>
