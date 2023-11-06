@@ -12,6 +12,12 @@ body {
   letter-spacing: 0.25px;
 }
 
+*
+{
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+}
+
 #heart
 {
   color: red;
