@@ -17,6 +17,7 @@ class MyCustomElement extends HTMLElement {
             <button id="search">
                 <img src="../../icons/search.svg" style="
                 width: 20px;
+                filter: invert(96%) sepia(97%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
                 ">
             </button>
         </div>
