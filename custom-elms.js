@@ -18,6 +18,8 @@ class MyCustomElement extends HTMLElement {
                 <img src="../../icons/search.svg" style="
                 width: 20px;
                 filter: invert(96%) sepia(97%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
+                color: white;
+                fill: white;
                 ">
             </button>
         </div>
@@ -57,6 +59,26 @@ class MyCustomElementAd extends HTMLElement {
 }
 customElements.define('ad-elm', MyCustomElementAd);
 
+class MyCustomElementTerms extends HTMLElement {
+    constructor() {
+        super();
+        const shadowRoot = this.attachShadow({ mode: 'open' });
+        shadowRoot.innerHTML = `
+        <footer>
+        <div class="footer-content">
+          <p>
+            &copy; 2023 Astro-Games, <br />
+            Made with <i class="fa-solid fa-heart" id="red-filler" style="color: red;"></i> by our
+            amazing community! <br /><br />
+            <a href="/">Back Home <i class="fa-solid fa-arrow-right-from-bracket"></i></i></a>
+          </p>
+        </div>
+      </footer>
+        `;
+    }
+}
+customElements.define('terms-elm', MyCustomElementTerms);
+
 class MyCustomElementOpt extends HTMLElement {
     constructor() {
         super();
@@ -83,6 +105,7 @@ class MyCustomElementOpt extends HTMLElement {
             filter: invert(96%) sepia(97%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
             width: 20px;
         " src="../../icons/expand.svg"></div>
+        <terms-elm></terms-elm>
         </center>
         `;
     }
