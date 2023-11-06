@@ -19,6 +19,7 @@ class MyCustomElement extends HTMLElement {
                 width: 20px;
                 color: white;
                 fill: white;
+                filter: invert(1);
                 ">
             </button>
         </div>
@@ -63,6 +64,8 @@ class MyCustomElementTerms extends HTMLElement {
         super();
         const shadowRoot = this.attachShadow({ mode: 'open' });
         shadowRoot.innerHTML = `
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="legal/legal.css">
         <footer>
         <div class="footer-content">
           <p>
