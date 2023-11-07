@@ -120,6 +120,12 @@ class MyCustomElementHome extends HTMLElement {
         super();
         const shadowRoot = this.attachShadow({ mode: 'open' });
         shadowRoot.innerHTML = `
+        <a href="../../index.html" style="
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            width: 300px;
+            height: 50px;
+        ">
         <center><button style="
             color: rgb(0, 0, 0);
             background-color: rgb(255, 255, 255);
@@ -132,13 +138,9 @@ class MyCustomElementHome extends HTMLElement {
             margin-top: 50px;
             margin-bottom: 100px;
         ">
-        <a href="../../index.html" style="
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-            width: 300px;
-            height: 50px;
-        ">Home</a>
+        Home
         </button></center>
+        </a>
         `;
     }
 }
