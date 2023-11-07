@@ -158,3 +158,15 @@ p
 }
 
 /*    */
+
+
+
+#home-btn
+{
+    transition: 0.2s;
+}
+
+#home-btn:hover
+{
+    transform: scale(1.08);
+}

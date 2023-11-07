@@ -120,6 +120,7 @@ class MyCustomElementHome extends HTMLElement {
         super();
         const shadowRoot = this.attachShadow({ mode: 'open' });
         shadowRoot.innerHTML = `
+        <link rel="stylesheet" href="../../style.css">
         <a href="../../index.html" style="
             color: rgb(0, 0, 0);
             text-decoration: none;
@@ -137,7 +138,7 @@ class MyCustomElementHome extends HTMLElement {
             font-family: 'Comfortaa', sans-serif;
             margin-top: 50px;
             margin-bottom: 100px;
-        ">
+        " id="home-btn">
         Home
         </button></center>
         </a>
