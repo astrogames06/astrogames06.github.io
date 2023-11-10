@@ -11,6 +11,9 @@ body
 {
     padding: 0px;
     margin: 0;
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: bold;
 }
 
 h1, h2, h3
