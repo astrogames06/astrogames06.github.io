@@ -28,8 +28,9 @@ class MyCustomElement extends HTMLElement {
             position: absolute;
             top: 0;
             margin-left: 50px;
-            font-family: 'Comfortaa', sans-serif; 
-        ">Astro Games</p>
+            line-height: 50px;
+            font-family: 'Comfortaa', sans-serif;
+        " id="water-mark">Astro Games</p>
         <img src="../../astro.jpg" alt="astro" style="width: 50px; position: absolute; top: 0;">
         </div>
         `;
