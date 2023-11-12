@@ -1,9 +1,14 @@
+document.addEventListener('DOMContentLoaded', function() {
+
 class MyCustomElement extends HTMLElement {
     constructor() {
         super();
+        console.log('MyCustomElement constructor');
+
         const shadowRoot = this.attachShadow({ mode: 'open' });
         shadowRoot.innerHTML = `
         <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
         <link rel="stylesheet" href="../../style.css">
         <div style="
         position: sticky;
@@ -11,27 +16,32 @@ class MyCustomElement extends HTMLElement {
         top: 0;
         z-index: 100;
         ">
-        <div id="navbar">
+        <div id="navbar" style="position: fixed;">
             <a href="../../index.html" id="home-btn">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">More
+                    <img style="width: 10px; margin-left:5px;" src="../../caret-down.svg" alt="down">
+                </button>
+                <div class="dropdown-content" style="position: fixed; right: 48px;">
+                  <a href="../../TopGames.html">Top Games 🔥</a>
+                  <a href="../../2PlrGames.html">2 Player 👥</a>
+                  <a href="../../MyFavs.html">My Favourites 👍</a>
+                </div>
+              </div>
             <button id="secret-btn"><a href="../../secret.html">???</a></button>
-            <button id="search">
-                <img src="../../icons/search.svg" style="
-                width: 20px;
-                color: white;
-                fill: white;
-                filter: invert(1);
-                ">
-            </button>
-        </div>
+            
+
+            
         <p style="
             color: white;
-            position: absolute;
+            position: fixed;
             top: 0;
             margin-left: 50px;
             line-height: 50px;
             font-family: 'Comfortaa', sans-serif;
+            left: 0;
         " id="water-mark">Astro Games</p>
-        <img src="../../astro.jpg" alt="astro" style="width: 50px; position: absolute; top: 0;">
+        <img src="../../astro.jpg" alt="astro" style="width: 50px; position: fixed; top: 0; left: 0;">
         </div>
         `;
     }
@@ -147,3 +157,5 @@ class MyCustomElementHome extends HTMLElement {
     }
 }
 customElements.define('home-btn', MyCustomElementHome);
+
+});

@@ -16,6 +16,16 @@ body
     font-weight: bold;
 }
 
+#myInput::placeholder
+{
+    color: black;
+}
+
+#myDropdown
+{
+    margin-right: 50px;
+}
+
 h1, h2, h3
 {
   font-family: 'Comfortaa', sans-serif;
@@ -206,6 +216,7 @@ p
     font-weight: bold;
     text-decoration: none;
     transition: 0.2s;
+    margin-right: 25px;
 }
 
 #home-btn:hover
@@ -223,17 +234,45 @@ p
 #games #games-ul li
 {
     margin-right: 50px;
+    margin-bottom: 50px;
 }
 
 #games #games-ul li a img
 {
     border-radius: 45px;
     transition: 0.2s;
+    width: 200px;
+    margin-bottom: 8px;
 }
 
 #games #games-ul li a img:hover
 {
     transform: scale(1.08);
+}
+
+#games #games-ul li a:hover {
+    color: blue !important;
+}
+
+#games #games-ul li a p
+{
+    white-space: nowrap;
+}
+
+.games-ul li a img
+{
+    border-radius: 45px;
+    transition: 0.2s;
+    width: 200px;
+}
+
+#games #games-ul li.show {
+    display: block;
+}
+
+#myDropdown.show
+{
+    display: block;
 }
 
 
@@ -261,3 +300,102 @@ p
 {
     transform: scale(1.08);
 }
+
+#search-bar
+{
+    margin-top: 50px;
+    width: 350px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+    background-color: rgb(41, 41, 41);
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+#search-bar:focus
+{
+    outline: none;
+    border: 1px solid mediumseagreen;
+}
+
+textarea:focus
+{
+    outline: none !important;
+    border-color: mediumseagreen;
+    padding-left: 50px;
+    padding-right: 0px;
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+   /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
