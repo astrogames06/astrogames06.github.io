@@ -254,7 +254,7 @@ p
     color: blue !important;
 }
 
-#games #games-ul li a p
+#games #games-ul li p
 {
     white-space: nowrap;
 }
