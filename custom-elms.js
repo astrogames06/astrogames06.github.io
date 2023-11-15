@@ -32,7 +32,7 @@ class MyCustomElement extends HTMLElement {
               
               <a style="margin-right: 50px;" href="https://github.com/AstroGames08/astrogames08.github.io">
                 <img style="width:30px;"
-                src="github.svg">
+                src="../../github.svg">
               </a>
 
             
