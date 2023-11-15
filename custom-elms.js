@@ -22,14 +22,18 @@ class MyCustomElement extends HTMLElement {
                 <button class="dropbtn">More
                     <img style="width: 10px; margin-left:5px;" src="../../caret-down.svg" alt="down">
                 </button>
+                <button id="secret-btn"><a href="../../secret.html">???</a></button>
                 <div class="dropdown-content" style="position: fixed; right: 48px;">
                   <a href="../../TopGames.html">Top Games 🔥</a>
                   <a href="../../2PlrGames.html">2 Player 👥</a>
                   <a href="../../MyFavs.html">My Favourites 👍</a>
                 </div>
               </div>
-            <button id="secret-btn"><a href="../../secret.html">???</a></button>
-            
+              
+              <a style="margin-right: 50px;" href="https://github.com/AstroGames08/astrogames08.github.io">
+                <img style="width:30px;"
+                src="github.svg">
+              </a>
 
             
         <p style="
