@@ -19,13 +19,20 @@ class MyCustomElement extends HTMLElement {
         <div id="navbar" style="position: fixed;">
             <a href="../../index.html" id="home-btn">Home</a>
             <div class="dropdown">
-                <button class="dropbtn">More
+                <button class="dropbtn">Categories
                     <img style="width: 10px; margin-left:5px;" src="../../caret-down.svg" alt="down">
                 </button>
                 <button id="secret-btn"><a href="../../secret.html">???</a></button>
-                <div class="dropdown-content" style="position: fixed; right: 48px;">
+                <div class="dropdown-content" style="
+                    position: fixed; 
+                    right: 130px;
+                ">
                   <a href="../../TopGames.html">Top Games 🔥</a>
                   <a href="../../2PlrGames.html">2 Player 👥</a>
+                  <a href="../../RetroGames.html">Retro Games 🍄</a>
+                  <a href="../../IoGames.html">Io Games 🎮</a>
+                  <a href="../../FlashGames.html">Flash Games ⚡</a>
+                  <a href="../../SportsGames.html">Sports Games ⚽</a>
                   <a href="../../MyFavs.html">My Favourites 👍</a>
                 </div>
               </div>
