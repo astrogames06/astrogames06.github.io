@@ -89,16 +89,21 @@ class MyCustomElementTerms extends HTMLElement {
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="legal/legal.css">
         <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
-        <footer>
+
         <div class="footer-content">
           <p>
             &copy; 2023 Astro-Games, <br />
             Made with <i class="fa-solid fa-heart" id="red-filler" style="color: red;"></i> by our
             amazing community! <br /><br />
-            <a href="/">Back Home <i class="fa-solid fa-arrow-right-from-bracket"></i></i></a>
+            <a href="../../legal/privacy.html">Privacy Policy <i class="fa-solid fa-arrow-right-from-bracket"></i></i></a>
+            <br>
+            <a href="../../legal/terms-of-service.html">Terms Of Service <i class="fa-solid fa-arrow-right-from-bracket"></i></i></a>
+            <br>
+            <br>
+            <a href="../../index.html">Back Home <i class="fa-solid fa-arrow-right-from-bracket"></i></i></a>
           </p>
         </div>
-      </footer>
+
         `;
     }
 }
