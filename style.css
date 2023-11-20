@@ -428,3 +428,12 @@ textarea:focus
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+#heart
+{
+  color: red;
+}
+
+.divider-content {
+  width: 300px;
+}
