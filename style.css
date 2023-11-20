@@ -89,7 +89,7 @@ h1, h2, h3
     transition: .2s;
     text-decoration: none;
     transition: 0.1s;
-    font-size: 36px;
+    font-size: 20px;
     font-weight: bolder;
     display: table;
     line-height: 70px;
@@ -115,7 +115,7 @@ h1, h2, h3
 #coffee-a
 {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 36px;
     width: 200px;
     height: 64px;
 }
