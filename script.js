@@ -16,7 +16,7 @@ function smoothScroll(targetId) {
     });
 }
 let count = document.getElementById('games').getElementsByTagName("li").length;
-document.getElementById('games-count').innerHTML = `${count} Games`
+document.getElementById('games-count').innerHTML = `${count}-2 Games`
 
 function myFunction() {
     const dropdown = document.getElementById('myInput');
