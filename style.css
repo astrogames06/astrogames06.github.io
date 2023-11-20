@@ -180,6 +180,11 @@ p
     margin-right: 25px;
 }
 
+#support-btn:hover
+{
+    animation: size-up 0.2s;
+    transform: scale(1.2);
+}
 #search
 {
     background: none;
