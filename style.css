@@ -172,13 +172,12 @@ p
 }
 #support-btn
 {
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background: none;
-    border: none;
-    opacity: 0;
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+    margin-right: 25px;
 }
 
 #search
