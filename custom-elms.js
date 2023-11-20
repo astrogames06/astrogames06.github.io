@@ -23,6 +23,7 @@ class MyCustomElement extends HTMLElement {
                     <img style="width: 10px; margin-left:5px;" src="../../caret-down.svg" alt="down">
                 </button>
                 <button id="secret-btn"><a href="../../secret.html">???</a></button>
+                <button id="support-btn"><a href="../../Support.html">???</a></button>
                 <div class="dropdown-content" style="
                     position: fixed; 
                     right: 130px;
