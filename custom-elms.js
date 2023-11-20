@@ -18,12 +18,13 @@ class MyCustomElement extends HTMLElement {
         ">
         <div id="navbar" style="position: fixed;">
             <a href="../../index.html" id="home-btn">Home</a>
+            <a href="../../Support.html" id="support-btn">Support Us!</a>
             <div class="dropdown">
                 <button class="dropbtn">Categories
                     <img style="width: 10px; margin-left:5px;" src="../../caret-down.svg" alt="down">
                 </button>
                 <button id="secret-btn">Support Us!<a href="../../secret.html">???</a></button>
-                <button id="support-btn"><a href="../../Support.html">???</a></button>
+
                 <div class="dropdown-content" style="
                     position: fixed; 
                     right: 130px;
