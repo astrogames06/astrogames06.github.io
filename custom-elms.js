@@ -90,12 +90,13 @@ class MyCustomElementTerms extends HTMLElement {
         shadowRoot.innerHTML = `
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="legal/legal.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
 
         <div class="footer-content">
           <p>
             &copy; 2023 Astro-Games, <br />
-            Made with <i class="fa-solid fa-heart" style="color: #ff0000;"></i> by our
+            Made with <i class="fa fa-heart" style="color:red"></i> by our
             amazing community! <br /><br />
             <a href="../../legal/privacy.html">Privacy Policy <i class="fa-solid fa-arrow-right-from-bracket"></i></i></a>
             <br>
