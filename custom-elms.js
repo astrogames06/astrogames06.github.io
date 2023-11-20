@@ -22,7 +22,7 @@ class MyCustomElement extends HTMLElement {
                 <button class="dropbtn">Categories
                     <img style="width: 10px; margin-left:5px;" src="../../caret-down.svg" alt="down">
                 </button>
-                <button id="secret-btn"><a href="../../secret.html">???</a></button>
+                <button id="secret-btn">Support Us!<a href="../../secret.html">???</a></button>
                 <button id="support-btn"><a href="../../Support.html">???</a></button>
                 <div class="dropdown-content" style="
                     position: fixed; 
