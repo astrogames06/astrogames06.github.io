@@ -21,6 +21,29 @@ body
     color: black;
 }
 
+#body-top
+{
+    position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #ccc; /* Set a background color for the canvas */
+      display: block; /* Removes any default spacing/margin for inline elements */
+      z-index: -1; /* Send the canvas to the background */
+}
+
+#top-section
+{
+    top: 0;
+    z-index: 99 !important;
+}
+
+#top-section center
+{
+    z-index: 99;
+}
+
 #myDropdown
 {
     margin-right: 50px;
@@ -47,7 +70,7 @@ h1, h2, h3
     transition: .2s;
     text-decoration: none;
     transition: 0.1s;
-    font-size: 23px;
+    font-size: 35px;
     font-weight: bolder;
     display: table;
     line-height: 70px;
@@ -66,11 +89,19 @@ h1, h2, h3
     margin-top: 100px;
     width: 35px;
     opacity: 35%;
+    margin-bottom: 100px;
+    transition: opacity 0.2s;
 }
 
 #down:hover
 {
     opacity: 100%;
+}
+
+#invite
+{
+    margin-top: -150px;
+    margin-bottom: -200px;
 }
 
 @keyframes rotate-hue {
@@ -158,6 +189,7 @@ p
     display: flex;
     justify-content: right;
     align-items: center;
+    position: fixed !important;
 }
 
 #secret-btn

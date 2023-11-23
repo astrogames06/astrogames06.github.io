@@ -19,19 +19,22 @@
     <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="astro.jpg">
 </head>
-<body bgcolor="black" style="background: url('stars.jpg') black no-repeat; background-size: cover; height:100%;">
+<!-- <body bgcolor="black" style="background: url('stars.jpg') black no-repeat; background-size: cover; height:100%;"> -->
+<body bgcolor="black">
     <script src="custom-elms.js"></script>
-    <div id="top-section">
+    <canvas id="body-top"></canvas>
+    <div id="top-section" style="z-index: 99;">
         <nav-bar></nav-bar>
         <br>
         <br>
         <br>
         <br>
         <br>
+        <center>
         <h1 id="title">Astro Games</h1>
         <br>
         <br>
-        <center>
+        
             <img src="astro.jpg" alt="astro" id="astro" style="width: 400px;">
             <br>
             <br>
@@ -44,5 +47,6 @@
             <br>
         </center>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
