@@ -20,12 +20,12 @@ class MyCustomElement extends HTMLElement {
             <a href="../../index.html" id="home-btn">Home</a>
             <a href="../../Support.html" id="support-btn">Support Us!</a>
             <div class="dropdown">
-                <button class="dropbtn">Categories
-                    <img style="width: 10px; margin-left:5px;" src="../../caret-down.svg" alt="down">
+                <button id="dropbtn" class="dropbtn">Categories
+                    <img style="width: 10px; margin-left:5px;" id="caret" src="../../caret-down.svg" alt="down">
                 </button>
                 <button id="secret-btn">Support Us!<a href="../../secret.html">???</a></button>
 
-                <div class="dropdown-content" style="
+                <div id="dropdown-content" class="dropdown-content" style="
                     position: fixed; 
                     right: 130px;
                 ">
