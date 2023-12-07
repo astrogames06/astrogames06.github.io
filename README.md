@@ -1,3 +1,3 @@
 # AstroGames
 
-[astrogames07.github.io](https://astrogames07.github.io/)
+[astrogames06.github.io](https://astrogames06.github.io/)
