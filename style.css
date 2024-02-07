@@ -482,3 +482,8 @@ textarea:focus
 .divider-content {
   width: 300px;
 }
+
+iframe
+{
+    border-radius: 15px;
+}
