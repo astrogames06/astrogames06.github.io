@@ -1,0 +1,152 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Flip Bottle - TBG95</title>
+    <meta name="description" content="Flip Bottle is a simple but challenging one-button game. Flip the bottle and make it jump from object to object to reach the final platform. Play Flip Bottle 3D Unblocked on TBG95">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <!-- <script type="text/javascript" src="//tbg95.github.io/cloak.js"></script> -->
+    <meta name="robots" content="noindex,nofollow" />
+    <style>
+        html, body {
+            -ms-touch-action: none;
+            background: #5E5858;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        .button {
+          background: #599bb3;
+          background-image: -webkit-linear-gradient(top, #599bb3, #408c99);
+          background-image: -moz-linear-gradient(top, #599bb3, #408c99);
+          background-image: -ms-linear-gradient(top, #599bb3, #408c99);
+          background-image: -o-linear-gradient(top, #599bb3, #408c99);
+          background-image: linear-gradient(to bottom, #599bb3, #408c99);
+          -webkit-border-radius: 8;
+          -moz-border-radius: 8;
+          border-radius: 8px;
+          text-shadow: 0px 1px 0px #3d768a;
+          -webkit-box-shadow: 0px 10px 14px -7px #276873;
+          -moz-box-shadow: 0px 10px 14px -7px #276873;
+          box-shadow: 0px 10px 14px -7px #276873;
+          font-family: Arial;
+          color: #ffffff;
+          font-size: 24px;
+          padding: 12px 30px 12px 30px;
+          text-decoration: none;
+        }
+
+        .button:hover {
+          color: #ffffff;
+          background: #408c99;
+          text-decoration: none;
+        }
+    </style>
+  
+</head>
+
+<body>
+    <div class="main-nav" id="post" style="display: none;">
+        <!-- <h1>Bottle Flip 3D</h1>
+        <p>
+            You have to flip a plastic bottle in the exciting arcade game Bottle Flip 3D! Make the bottle jump or even double flip. How? Just tap the screen at the right moment and jump!<br><br>Explore different rooms, jump on all sorts of objects: shelves, tables, chairs, sofas, and even subwoofers! Train your agility, develop coordination, control the strength and distance of the jump. And most importantly - calculate the distance correctly because it depends on whether you can get to the finish line and win! <br><br>Interesting levels, different obstacles, and your ideal flips - with  Bottle Flip 3D you will never be bored! Enjoy!<br><br>Functions:<br> - Agility, coordination, and fun - this is a new arcade game  Bottle Flip 3D!<br> - Flip a plastic bottle - explore different rooms-levels.<br> - Tap the screen at the right moment and jump, winning the  Bottle Flip 3D depends on you!<br> - Do you think throwing a bottle is easy? Try it then!<br> - The fun is just beginning - interesting levels and easy controls, what could be better?<br><br>
+        </p>
+        <h2>How to play Bottle Flip 3D</h2>
+        <p>Press left mouse button at the right moment to jump.</p>
+        <h2>More Games</h2>
+        <p>If you like Bottle Flip 3d, you can play <a href="https://tbg95.github.io/slope/" title="Slope">Slope</a> is similar games</p>
+        <h2>Who created Bottle Flip 3D?</h2>
+        <p>Flip Bottle 3D is developed by BPTop. This version is inspired by Bottle Flip 3D, a game by tastypill.</p> -->
+    </div>
+    <script>
+    window.$T_GAME_VERSION="1.0.33"
+    window.$T_GAME_ARGS={};
+    window.$T__RES__FILE="resource/default.res.json";
+    window.$T__THE__FILE="resource/default.thm.json";
+    window.$T_PROGRESS = 0;
+    
+    </script>
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
+         data-entry-class="Main"
+         data-orientation="auto"
+         data-scale-mode="fixedHeight"
+         data-frame-rate="60"
+         data-content-width="640"
+         data-content-height="1136"
+         data-multi-fingered="2"
+         data-show-fps="false" data-show-log="false"
+         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    </div>
+    <center>
+	    <div id="btn_play" style="z-index:100;width:122px;height:71px;position:absolute;left:0; right:0; top:0; bottom:0;margin:auto;display:none">
+	      <a class="button" href="#" onClick="window.this_0xd1011e&&window.this_0xd1011e.StartGame();">Play</a>
+	    </div>
+  	</center>
+<script>
+    var loadScript = function (list, callback) {
+        var loaded = 0;
+        var loadNext = function () {
+            loadSingleScript(list[loaded], function () {
+                loaded++;
+                if (loaded >= list.length) {
+                    callback();
+                }
+                else {
+                    loadNext();
+                }
+            })
+        };
+        loadNext();
+    };
+
+    var loadSingleScript = function (src, callback) {
+        var s = document.createElement('script');
+        s.async = false;
+        s.src = src;
+        s.addEventListener('load', function () {
+            s.parentNode.removeChild(s);
+            s.removeEventListener('load', arguments.callee, false);
+            callback();
+        }, false);
+        document.body.appendChild(s);
+    };
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', './manifest.json?v=' + Math.random(), true);
+    xhr.addEventListener("load", function () {
+        var manifest = JSON.parse(xhr.response);
+        var list = manifest.initial.concat(manifest.game);
+        loadScript(list, function () {
+            /**
+             * {
+             * "renderMode":, //Engine rendering mode, "canvas" or "webgl"
+             * "audioType": 0 //Use the audio type, 0: default, 2: web audio, 3: audio
+             * "antialias": //Whether the anti-aliasing is enabled in WebGL mode, true: on, false: off, defaults to false
+             * "calculateCanvasScaleFactor": //a function return canvas scale factor
+             * }
+             **/
+            egret.runEgret({ renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor:function(context) {
+                var backingStore = context.backingStorePixelRatio ||
+                    context.webkitBackingStorePixelRatio ||
+                    context.mozBackingStorePixelRatio ||
+                    context.msBackingStorePixelRatio ||
+                    context.oBackingStorePixelRatio ||
+                    context.backingStorePixelRatio || 1;
+                return (window.devicePixelRatio || 1) / backingStore;
+            }});
+        });
+    });
+    xhr.send(null);
+</script>
+</body>
+
+</html>

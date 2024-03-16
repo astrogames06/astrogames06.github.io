@@ -1,0 +1,12 @@
+{"file":"system.png","frames":{
+"share_challenge_head2_png":{"x":323,"y":1,"w":113,"h":123,"offX":16,"offY":16,"sourceW":140,"sourceH":140},
+"share_challenge_head3_png":{"x":316,"y":213,"w":83,"h":85,"offX":11,"offY":11,"sourceW":100,"sourceH":100},
+"share_challenge_head1_png":{"x":1,"y":1,"w":165,"h":166,"offX":20,"offY":20,"sourceW":200,"sourceH":200},
+"rank_levelbg_png":{"x":323,"y":126,"w":52,"h":22,"offX":0,"offY":0,"sourceW":52,"sourceH":22},
+"share_crown_png":{"x":438,"y":72,"w":66,"h":58,"offX":0,"offY":0,"sourceW":66,"sourceH":58},
+"loading_indicator_png":{"x":218,"y":213,"w":96,"h":96,"offX":0,"offY":0,"sourceW":96,"sourceH":96},
+"default-portrait_png":{"x":116,"y":213,"w":100,"h":100,"offX":0,"offY":0,"sourceW":100,"sourceH":100},
+"head_square_mask_png":{"x":438,"y":1,"w":69,"h":69,"offX":0,"offY":0,"sourceW":69,"sourceH":69},
+"head_cycle_mask_png":{"x":168,"y":1,"w":153,"h":153,"offX":0,"offY":0,"sourceW":153,"sourceH":153},
+"bg_tips_png":{"x":168,"y":156,"w":335,"h":55,"offX":0,"offY":0,"sourceW":335,"sourceH":55},
+"sharehead_png":{"x":1,"y":169,"w":113,"h":116,"offX":5,"offY":2,"sourceW":118,"sourceH":118}}}
