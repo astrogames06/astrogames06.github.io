@@ -1,0 +1,2 @@
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file .cache/replit/modules/replit:v5-20240209-9e3a339","time":"2024-03-17T22:08:07Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file .local/share/rippkgs-index.sqlite","time":"2024-03-17T22:08:08Z"}
