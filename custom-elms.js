@@ -138,6 +138,22 @@ class MyCustomElementOpt extends HTMLElement {
             filter: invert(96%) sepia(97%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
             width: 20px;
         " src="../../icons/expand.svg"></div>
+        <script src="https://giscus.app/client.js"
+            data-repo="astrogames06/astrogames06.github.io"
+            data-repo-id="R_kgDOKg26UA"
+            data-category="General"
+            data-category-id="DIC_kwDOKg26UM4CeEIx"
+            data-mapping="specific"
+            data-term="Comments"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="dark"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+        </script>
         <terms-elm></terms-elm>
         </center>
         `;
