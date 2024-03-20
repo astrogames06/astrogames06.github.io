@@ -4,7 +4,14 @@ document.getElementById('down').onclick = function (e) {
     smoothScroll('games');
 };
 
-
+window.onload = function() {
+	let alertShown = localStorage.getItem('alertShown');
+	
+	if (!alertShown) {
+	    alert("Astro Games Update: \nA lot of the games are being fixed and new games are being added.");
+	    localStorage.setItem('alertShown', 'true');
+	}
+}
 
 function smoothScroll(targetId) {
     const targetSection = document.getElementById(targetId);
