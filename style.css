@@ -487,6 +487,10 @@ textarea:focus
 iframe
 {
     border-radius: 15px;
+}
+
+#embededGame
+{
     width: 1080px !important;
     height: 616px !important;
 }
