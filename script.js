@@ -5,11 +5,11 @@ document.getElementById('down').onclick = function (e) {
 };
 
 window.onload = function() {
-	let alertShown = localStorage.getItem('alertShown');
+	let alertShown = localStorage.getItem('msg0');
 	
 	if (!alertShown) {
-	    alert("Astro Games Update: \nA lot of the games are being fixed and new games are being added.");
-	    localStorage.setItem('alertShown', 'true');
+	    alert("Tomb of the mask, mario, mario64, bottle flip 3d, subway surfers, tetris, n-gon, slope, vex-6 and bitlife and now fixed!");
+	    localStorage.setItem('msg0', 'true');
 	}
 }
 
