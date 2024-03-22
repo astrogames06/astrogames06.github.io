@@ -95,8 +95,9 @@ class MyCustomElementTerms extends HTMLElement {
 
         <div class="footer-content">
           <p>
-            &copy; 2023 Astro-Games, <br />
-            Made with <i class="fa fa-heart" style="color:red"></i> by our
+            &copy; 2024 Astro-Games, <br />
+            Made with   <img style="width:30px;"
+                src="icons/transgender.png"> by our
             amazing community! <br /><br />
             <a href="../../legal/privacy.html">Privacy Policy <i class="fa-solid fa-arrow-right-from-bracket"></i></i></a>
             <br>
