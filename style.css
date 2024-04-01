@@ -294,6 +294,7 @@ p
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 50px;
+    display: inline-block;
 }
 
 #games #games-ul li a img
