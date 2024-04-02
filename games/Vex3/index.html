@@ -1,50 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2939348888494004"
-     crossorigin="anonymous"></script>
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z22G6D1DRT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
 
-  gtag('config', 'G-Z22G6D1DRT');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vex3</title>
-    <link rel="stylesheet" href="../../style.css">
-    <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="../../astro.jpg">
+    <title>Vex 3</title>
+
+    <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
 </head>
-<body bgcolor="black">
-    <script src="../../custom-elms.js"></script>
-    <nav-bar></nav-bar>
+<body>
+<div id="dummy" style="position:fixed;right:0;bottom:0"></div>
+<div id="orientation"></div>
+<div id="content"></div>
 
-    <div style="
-        width: 100%;
-        height: 340px;
-        background-image: url('../../stars.jpg');
-        background-size: cover;
-    ">
-        <h1 style="
-            color: white;
-            text-align: center;
-            font-family: 'Comfortaa', sans-serif;
-            line-height: 340px;
-        ">Vex 3</h1>
-    </div>
+<script type="text/javascript">
+    var gameName = 'vex-3.min.js';
 
-    <home-btn></home-btn>
-    <ad-elm></ad-elm>
-    <center>
-        <iframe id="embededGame" style="width: 1280px; height: 786px; border: 0;"
-        src="https://21phrog.github.io/static/src/gs/public/vex3/index.html"></iframe>
-        <opt-elm></opt-elm>
-    </center>
+    //This all here is for cache busting;
+    function addScript(src ,buster, callback) {
+        var s = document.createElement( 'script' );
+        s.setAttribute( 'src', src + '?v=' + buster );
+        if (typeof callback === 'function') {
+            s.onload=callback;
+        }
+        document.body.appendChild( s );
+    }
 
-    <script src="../../fullscreen.js"></script>
+    addScript('version.js', Date.now(), function () {
+        addScript(gameName, version, function () {
+            /**
+             * Here we create the game
+             */
+            var game = new Vex3.Game.getInstance();
+            game.start();
+        })
+    })
+</script>
 </body>
 </html>
