@@ -1,50 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2939348888494004"
-     crossorigin="anonymous"></script>
-<head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z22G6D1DRT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Elastic Face</title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <script type="text/template" id="loading-template">
+            <div id="loading-bar" class="loading-bar-visible">
+                <div id="loading-fill"></div>
+            </div>
+        </script>
+        <script type="text/template" id="no-support-template">
+            <div id="error">Your browser does not support the required features. Try another browser and/or device!</div>
+        </script>
+        <script type="text/template" id="main-template">
+            <div id="quality-container">
+                <div id="quality-label">Quality</div>
+                <div class="quality" id="quality-medium">Medium</div>
+                <div class="quality" id="quality-high">High</div>
+            </div>
 
-  gtag('config', 'G-Z22G6D1DRT');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ElasticManss</title>
-    <link rel="stylesheet" href="../../style.css">
-    <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="../../astro.jpg">
-</head>
-<body bgcolor="black">
-    <script src="../../custom-elms.js"></script>
-    <nav-bar></nav-bar>
-
-    <div style="
-        width: 100%;
-        height: 340px;
-        background-image: url('../../stars.jpg');
-        background-size: cover;
-    ">
-        <h1 style="
-            color: white;
-            text-align: center;
-            font-family: 'Comfortaa', sans-serif;
-            line-height: 340px;
-        ">Elastic Man</h1>
-    </div>
-
-    <home-btn></home-btn>
-    <ad-elm></ad-elm>
-    <center>
-        <iframe id="embededGame" style="width: 1280px; height: 786px; border: 0;"
-        src="https://d21u3ic0kp9e91.cloudfront.net/elasticman/0/index.html"></iframe>
-        <opt-elm></opt-elm>
-    </center>
-
-    <script src="../../fullscreen.js"></script>
-</body>
+            <div id="credits">
+                <div>Created by <a href="http://david.li" target="_blank">David Li</a></div>
+                <div>Audio by <a href="https://enzienaudio.com/" target="_blank">Enzien Audio</a></div>
+            </div>
+        </script>
+        <div id="placeholder"></div>
+        <script src="app.js"></script>
+    </body>
 </html>
