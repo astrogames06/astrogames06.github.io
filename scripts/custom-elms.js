@@ -28,6 +28,7 @@ class MyCustomElement extends HTMLElement {
                 <div id="dropdown-content" class="dropdown-content" style="
                     position: fixed; 
                     right: 130px;
+                    color: white;
                 ">
                   <a href="../../categories/TopGames.html">Top Games 🔥</a>
                   <a href="../../categories/2PlrGames.html">2 Player 👥</a>
