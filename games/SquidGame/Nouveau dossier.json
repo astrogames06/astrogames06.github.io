@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "squidgame",
+"productVersion": "0.1",
+"dataUrl": "Nouveau dossier.data.unityweb",
+"wasmCodeUrl": "Nouveau dossier.wasm.code.unityweb",
+"wasmFrameworkUrl": "Nouveau dossier.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.3f1"
+}
