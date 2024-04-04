@@ -1,26 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
 
-<head>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
+      .embed {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+  </head>
 
-    .embed {
-      width: 100%;
-      height: 100%;
-    }
-  </style>
-  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-</head>
-
-<body>
-  <embed class="embed" src="happyWheels.swf" pluginspage="http://www.macromedia.com/go/getflashplayer">
-</body>
-
+  <body>
+    <embed
+      class="embed"
+      src="game.sfw"
+      pluginspage="http://www.macromedia.com/go/getflashplayer"
+    />
+  </body>
 </html>
