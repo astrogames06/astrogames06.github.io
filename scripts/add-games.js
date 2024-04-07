@@ -20,7 +20,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 game_li.appendChild(document.createElement('br'));
 
                 let p = document.createElement('p');
-                p.innerText = `${game}`;
+                p.innerText = `${game} `;
+                data.hot_games.forEach(hot_game => {
+                    if (game === hot_game)
+                    {
+                        let icon = document.createElement('i');
+
+                        icon.className = 'fa-solid fa-fire';
+                        icon.style.color = '#74C0FC';
+                        p.appendChild(icon);
+                    }
+                });
+
                 game_li.appendChild(p);
 
                 games_ul.appendChild(game_li);
