@@ -1,0 +1,15 @@
+{
+"companyName": "VardanAleksanyan",
+"productName": "Striker Dummies",
+"dataUrl": "Striker Dummies.data.unityweb",
+"wasmCodeUrl": "Striker Dummies.wasm.code.unityweb",
+"wasmFrameworkUrl": "Striker Dummies.wasm.framework.unityweb",
+"asmCodeUrl": "Striker Dummies.asm.code.unityweb",
+"asmMemoryUrl": "Striker Dummies.asm.memory.unityweb",
+"asmFrameworkUrl": "Striker Dummies.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
