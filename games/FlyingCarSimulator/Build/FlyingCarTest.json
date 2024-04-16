@@ -1,0 +1,16 @@
+{
+"companyName": "BlueAxis",
+"productName": "FlyingCarSimulator",
+"productVersion": "0.1",
+"dataUrl": "https://33baaa9a-3487-4a7f-9012-0c4d8ebd8193.poki-gdn.com/4b300604-110e-4549-895d-5fb416d66d66/Build/FlyingCarTest.data.unityweb",
+"wasmCodeUrl": "FlyingCarTest.wasm.code.unityweb",
+"wasmFrameworkUrl": "FlyingCarTest.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.0f3"
+}
