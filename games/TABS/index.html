@@ -1,50 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2939348888494004"
-     crossorigin="anonymous"></script>
-<head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z22G6D1DRT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z22G6D1DRT');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Totally Accurate Battle Simulator</title>
-    <link rel="stylesheet" href="../../style.css">
-    <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="../../astro.jpg">
-</head>
-<body bgcolor="black">
-    <script src="../../custom-elms.js"></script>
-    <nav-bar></nav-bar>
-
-    <div style="
-        width: 100%;
-        height: 340px;
-        background-image: url('../../stars.jpg');
-        background-size: cover;
-    ">
-        <h1 style="
-            color: white;
-            text-align: center;
-            font-family: 'Comfortaa', sans-serif;
-            line-height: 340px;
-        ">Totally Accurate Battle Simulator</h1>
+<!-- saved from url=(0057)https://bitlifeonline.github.io/funny-battle-simulator-2/ -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Squid Battle</title>
+    <link rel="shortcut icon" href="https://bitlifeonline.github.io/funny-battle-simulator-2/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="./FlyingCarTest.wasm.code_files/style.css">
+  </head>
+  <body class="dark">
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" style="background: url(&quot;Build/FunnyBattle2_GD.jpg&quot;) center center / cover;"></canvas>
     </div>
+    <div id="loading-cover" style="">
+      <div id="unity-loading-bar">
+        <div id="unity-logo"><img src="./FlyingCarTest.wasm.code_files/logo.png"></div>
+        <div id="unity-progress-bar-empty" style="">
+          <div id="unity-progress-bar-full" style="width: 0%;"></div>
+        </div>
+        <div class="spinner" style="display: none;"></div>
+      </div>
+    </div>
+    <div id="unity-fullscreen-button" style="display: none;"></div>
+    <script>
+      const hideFullScreenButton = "1";
+      const buildUrl = "Build";
+      const loaderUrl = buildUrl + "/FunnyBattle2_GD.loader.js";
+      const config = {
+        dataUrl: buildUrl + "/FunnyBattle2_GD.data.unityweb",
+        frameworkUrl: buildUrl + "/FunnyBattle2_GD.framework.js.unityweb",
+        codeUrl: buildUrl + "/FunnyBattle2_GD.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "GoGoMan",
+        productName: "Squid Battle",
+        productVersion: "0.1",
+      };
 
-    <home-btn></home-btn>
-    <ad-elm></ad-elm>
-    <center>
-        <iframe id="embededGame" style="width: 1280px; height: 786px; border: 0;"
-        src="https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/gertdoro/UnityBookPage@7a10156112355ace44265ffde049abec989e6e3c/docs/tabs.xml"></iframe>
-        <opt-elm></opt-elm>
-    </center>
+      const container = document.querySelector("#unity-container");
+      const canvas = document.querySelector("#unity-canvas");
+      const loadingCover = document.querySelector("#loading-cover");
+      const progressBarEmpty = document.querySelector("#unity-progress-bar-empty");
+      const progressBarFull = document.querySelector("#unity-progress-bar-full");
+      const fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      const spinner = document.querySelector('.spinner');
 
-    <script src="../../fullscreen.js"></script>
-</body>
-</html>
+      const canFullscreen = (function() {
+        for (const key of [
+            'exitFullscreen',
+            'webkitExitFullscreen',
+            'webkitCancelFullScreen',
+            'mozCancelFullScreen',
+            'msExitFullscreen',
+          ]) {
+          if (key in document) {
+            return true;
+          }
+        }
+        return false;
+      }());
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        container.className = "unity-mobile";
+        config.devicePixelRatio = 1;
+      }
+      canvas.style.background = "url('" + buildUrl + "/FunnyBattle2_GD.jpg') center / cover";
+      loadingCover.style.display = "";
+
+      const script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          spinner.style.display = "none";
+          progressBarEmpty.style.display = "";
+          progressBarFull.style.width = `${100 * progress}%`;
+        }).then((unityInstance) => {
+          loadingCover.style.display = "none";
+          if (canFullscreen) {
+            if (!hideFullScreenButton) {
+              fullscreenButton.style.display = "";
+            }
+            fullscreenButton.onclick = () => {
+              unityInstance.SetFullscreen(1);
+            };
+          }
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+    </script><script src="./FlyingCarTest.wasm.code_files/FunnyBattle2_GD.loader.js"></script>
+  
+
+<script src="blob:https://bitlifeonline.github.io/1af2fb21-48f0-4af5-9386-961a6fd2366c"></script></body></html>
