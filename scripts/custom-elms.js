@@ -123,9 +123,9 @@ class MyCustomElementOpt extends HTMLElement {
         <center>
         <div style="
             background: rgb(41, 41, 41);
-            width: 80%;
-            height: 35px;
-            border-radius: 5px;
+            width: 1080px;
+            height: 50px;
+            border-radius: 0px 0px 15px 15px;
             margin-bottom: 5px;
             align-items: center;
             display: flex;

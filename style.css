@@ -485,15 +485,12 @@ textarea:focus
   width: 300px;
 }
 
-iframe
-{
-    border-radius: 15px;
-}
-
 #embededGame
 {
     width: 1080px !important;
     height: 616px !important;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 0px;
 }
 
 canvas
