@@ -1,0 +1,25 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "manifest_version": 3,
+    "name": "Ice Dodo",
+    "short_name": "Ice Dodo",
+    "description": "Play 3D game easily by clicking the little icon at the top right corner of your browser.",
+    "version": "0.107",
+    "icons": {
+        "16": "assets/icons/icon16.png",
+        "48": "assets/icons/icon48.png",
+        "128": "assets/icons/icon128.png"
+    },
+    "action": {
+        "default_icon": "assets/icons/icon.png",
+        "default_popup": "world.html"
+    },
+    "permissions": ["storage"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "externally_connectable": {
+        "matches": ["https://*.onionfist.com/*"]
+    }
+}
