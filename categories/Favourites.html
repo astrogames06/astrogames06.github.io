@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2PlrGames</title>
+    <title>TopGames</title>
     <link rel="stylesheet" href="../style.css">
     <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
     <script src="../scripts/custom-elms.js"></script>
 </head>
 <body style="background-color: rgb(19, 19, 19);">
-    <script src="custom-elms.js"></script>
     <nav-bar></nav-bar>
     <br>
     <center>
@@ -20,9 +19,7 @@
         height: 75px;
         line-height: 75px;
         border-radius: 25px;
-    ">2 Player Games  <i class="fa-solid fa-person fa-xl" style="color: #B197FC;"></i>
-                  <i class="fa-solid fa-person fa-xl" style="color: #B197FC;"></i></h1>
-    
+    ">Favourites <i class="fa-solid fa-star fa" style="color:#FFD43B;"></i></h1>
 
     <input type="text" id="search-bar" placeholder="Search games..." oninput="search()" style="margin-bottom: 50px;">
 
@@ -46,8 +43,10 @@
                 return response.json();
             })
             .then(data => {
-                let games_ul = document.getElementById('games-ul')
-                data.two_player.forEach(game => {
+                let games_ul = document.getElementById('games-ul');
+                let favourites = JSON.parse(localStorage.getItem('favourite_games'));
+                for (let game of favourites)
+                {
                     let game_name = game.split(' ').join('');
                     let game_li = document.createElement('li');
                     let game_a = document.createElement('a');
@@ -77,7 +76,7 @@
                     game_li.appendChild(p);
 
                     games_ul.appendChild(game_li);
-                });
+                }
             })
             .catch(error => {
                 console.error('There was a problem fetching the data:', error);

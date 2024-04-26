@@ -9,7 +9,8 @@ class MyCustomElement extends HTMLElement {
         shadowRoot.innerHTML = `
         <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
         <script src="script.js"></script>
-        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="../style.css">
+
         <div style="
         position: sticky;
         position: -webkit-sticky;
@@ -30,13 +31,18 @@ class MyCustomElement extends HTMLElement {
                     right: 130px;
                     color: white;
                 ">
-                  <a href="../../categories/TopGames.html">Top Games 🔥</a>
-                  <a href="../../categories/2PlrGames.html">2 Player 👥</a>
-                  <a href="../../categories/RetroGames.html">Retro Games 🍄</a>
-                  <a href="../../categories/IoGames.html">Io Games 🎮</a>
-                  <a href="../../categories/FlashGames.html">Flash Games ⚡</a>
-                  <a href="../../categories/SportsGames.html">Sports Games ⚽</a>
-                  <a href="../../categories/MyFavs.html">My Favourites 👍</a>
+                  <a href="../../categories/TopGames.html">Top Games 
+                    <i class="fa-solid fa-fire fa-lg" style="color: #74C0FC;"></i>
+                  </a>
+                  <a href="../../categories/2PlrGames.html">2 Player 
+                  <i class="fa-solid fa-person fa-xl" style="color: #B197FC;"></i>
+                  <i class="fa-solid fa-person fa-xl" style="color: #B197FC;"></i>
+                  </a>
+                  <a href="../../categories/RetroGames.html">Retro Games <i class="fa-solid fa-ghost"></i></a>
+                  <a href="../../categories/IoGames.html">Io Games <i class="fa-solid fa-gamepad" style="color: #63E6BE;"></i></a>
+                  <a href="../../categories/FlashGames.html">Flash Games <i class="fa-solid fa-bolt" style="color: #FFD43B;"></i></a>
+                  <a href="../../categories/SportsGames.html">Sports <i class="fa-solid fa-futbol"></i></a>
+                  <a href="../../categories/Favourites.html">Favourites <i class="fa-solid fa-star fa" style="color:#FFD43B;"></i></a>
                 </div>
               </div>
               
@@ -89,8 +95,8 @@ class MyCustomElementTerms extends HTMLElement {
         super();
         const shadowRoot = this.attachShadow({ mode: 'open' });
         shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="../../style.css">
-        <link rel="stylesheet" href="legal/legal.css">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../legal/legal.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
 
@@ -129,7 +135,8 @@ class MyCustomElementOpt extends HTMLElement {
             margin-bottom: 5px;
             align-items: center;
             display: flex;
-        "><img onclick="goFullscreen('embededGame'); return false"  id="fullscreen-btn" style="
+        "><i class="fa-solid fa-expand" onclick="goFullscreen('embededGame'); return false"  
+            id="fullscreen-btn" style="
             float: right;
             color: white;
             font-size: 25px;
@@ -138,7 +145,7 @@ class MyCustomElementOpt extends HTMLElement {
             margin-left: 90%;
             filter: invert(96%) sepia(97%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
             width: 20px;
-        " src="../../icons/expand.svg"></div>
+        " src="../../icons/expand.svg"></i></div>
         </center>
         `;
     }

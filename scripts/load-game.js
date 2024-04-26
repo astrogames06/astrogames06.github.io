@@ -30,12 +30,15 @@ if (window.location.pathname.endsWith('game.html')) {
     game_title.innerText = localStorage.getItem('game-title');
     let game_name = game_title.innerText.split(' ').join('');
     let embededGame = document.getElementById('embededGame');
+    let canvas = document.getElementsByClassName("#canvas")[0];
 
     fetch('games.json')
         .then(response => response.json())
         .then(data => {
             let link = data.link;
             embededGame.src = `games/${game_name}/index.html`;
+            embededGame.style.width = canvas.style.width;
+            embededGame.style.height = canvas.style.height;
         });
 };
 

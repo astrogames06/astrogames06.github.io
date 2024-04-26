@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TopGames</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
+    <script src="../scripts/custom-elms.js"></script>
 </head>
 <body style="background-color: rgb(19, 19, 19);">
     <script src="custom-elms.js"></script>
@@ -15,116 +16,70 @@
     <h1 style="
         margin-top: 50px;
         background-color: rgb(41, 41, 41);
-        width: 300px;
+        width: 350px;
         height: 75px;
         line-height: 75px;
         border-radius: 25px;
-    ">Top Games 🔥</h1>
+    ">Top Games <i class="fa-solid fa-fire fa-lg" style="color: #74C0FC;"></i></h1>
 
-    <input type="text" id="search-bar" placeholder="Search games..." oninput="search()">
+    <input type="text" id="search-bar" placeholder="Search games..." oninput="search()" style="margin-bottom: 50px;">
+
 
     <div id="games">
-        <ul class="games-ul" id="games-ul" style="display: inline-block; margin-top: 50px;">
-            <li style="display: inline-block;">
-                <a href="games/BitLife/index.html">
-                    <img src="games/BitLife/icon.png" alt="SubwaySurfers">
-                </a>
-                <br>
-                <p style="
-                    margin-left: 2%;
-                    color: white;
-                    font-family: 'Comfortaa', sans-serif;
-                ">BitLife</p>
-            </li>
+        <ul class="games-ul" id="games-ul">
+            
 
-            <li style="display: inline-block;">
-                <a href="games/Tetris/index.html">
-                    <img src="games/Tetris/icon.png" alt="Tetris">
-                </a>
-                <br>
-                <p style="
-                    margin-left: 2%;
-                    color: white;
-                    font-family: 'Comfortaa', sans-serif;
-                ">Tetris</p>
-            </li>
-            
-            <li style="display: inline-block;">
-                <a href="games/BottleFlip3D/index.html">
-                    <img src="games/BottleFlip3D/icon.png" alt="GettingOverIt">
-                </a>
-                <br>
-                <p style="
-                    margin-left: 2%;
-                    color: white;
-                    font-family: 'Comfortaa', sans-serif;
-                ">Bottle Flip 3D</p>
-            </li>
-            
-            <li style="display: inline-block;">
-                <a href="games/1v1.lol/index.html">
-                    <img src="games/1v1.lol/icon.png" alt="1v1.lol">
-                </a>
-                <br>
-                <p style="
-                    margin-left: 2%;
-                    color: white;
-                    font-family: 'Comfortaa', sans-serif;
-                ">1v1.lol</p>
-            </li>
-
-            <li style="display: inline-block;">
-                <a href="games/TopGunsIO/index.html">
-                    <img src="games/TopGunsIO/icon.png" alt="TopGunsIO">
-                </a>
-                <br>
-                <p style="
-                    margin-left: 2%;
-                    color: white;
-                    font-family: 'Comfortaa', sans-serif;
-                ">Top Guns IO</p>
-            </li>
-
-            <li style="display: inline-block;">
-                <a href="games/EggyCar/index.html">
-                    <img src="games/EggyCar/icon.png" alt="EggyCar">
-                </a>
-                <br>
-                <p style="
-                    margin-left: 2%;
-                    color: white;
-                    font-family: 'Comfortaa', sans-serif;
-                ">Eggy Car</p>
-            </li>
-            
-            <li style="display: inline-block;">
-                <a href="games/ShellShockers/index.html">
-                    <img src="games/ShellShockers/icon.png" alt="ShellShockers">
-                </a>
-                <br>
-                <p style="
-                    margin-left: 2%;
-                    color: white;
-                    font-family: 'Comfortaa', sans-serif;
-                ">Shell Shockers</p>
-            </li>
-            
-            <li style="display: inline-block;">
-                <a href="games/Slope/index.html">
-                    <img src="games/Slope/icon.png" alt="Slope">
-                </a>
-                <br>
-                <p style="
-                    margin-left: 2%;
-                    color: white;
-                    font-family: 'Comfortaa', sans-serif;
-                ">Slope</p>
-            </li>
         </ul>
     </div>
     <terms-elm></terms-elm>
     </center>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
+    <script>
+        fetch('../games.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                let games_ul = document.getElementById('games-ul')
+                data.hot_games.forEach(game => {
+                    let game_name = game.split(' ').join('');
+                    let game_li = document.createElement('li');
+                    let game_a = document.createElement('a');
+                    game_a.href = '../game.html';
+
+                    let game_img = document.createElement('img');
+                    game_img.src = `../games/${game_name}/icon.png`;
+                    game_img.alt = `${game}`;
+
+                    game_a.appendChild(game_img);
+                    game_li.appendChild(game_a);
+                    game_li.appendChild(document.createElement('br'));
+
+                    let p = document.createElement('p');
+                    p.innerText = `${game} `;
+                    data.hot_games.forEach(hot_game => {
+                        if (game === hot_game)
+                        {
+                            let icon = document.createElement('i');
+
+                            icon.className = 'fa-solid fa-fire';
+                            icon.style.color = '#74C0FC';
+                            p.appendChild(icon);
+                        }
+                    });
+
+                    game_li.appendChild(p);
+
+                    games_ul.appendChild(game_li);
+                });
+            })
+            .catch(error => {
+                console.error('There was a problem fetching the data:', error);
+            });
+    </script>
 </body>
 </html>

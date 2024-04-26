@@ -42,8 +42,15 @@
     <home-btn></home-btn>
     <ad-elm></ad-elm>
     <center>
-      <iframe id="embededGame" style="width: 1280px; height: 786px; border: 0;" src="pages/unknown.html" sandbox="allow-scripts allow-same-origin"></iframe>
-        <opt-elm></opt-elm>
+        <iframe id="embededGame" src="" allow="allow-scripts allow-same-origin"></iframe>
+        <!-- <opt-elm></opt-elm> -->
+        <div id="opt-elm">
+            <i class="fa-solid fa-flag fa-xl" id="flag-btn"></i>
+            <i class="fa-solid fa-star fa-xl" id="star-btn"></i>
+            <i class="fa-solid fa-expand fa-xl" onclick="goFullscreen('embededGame'); return false"  
+            id="fullscreen-btn"></i>
+        </div>
+
         <script src="https://giscus.app/client.js"
             data-repo="astrogames06/astrogames06.github.io"
             data-repo-id="R_kgDOKg26UA"
@@ -61,7 +68,8 @@
         </script>
         <terms-elm></terms-elm>
     </center>
-
+    
+    <script src="scripts/favourite.js"></script>
     <script src="scripts/load-game.js"></script>
     <script src="scripts/fullscreen.js"></script>
 </body>
