@@ -103,5 +103,50 @@
         "Bottle Flip 3D",
         "BitLife",
         "Tiny Fishing"
+    ],
+    "two_player": [
+        "Striker Dummies",
+        "Boxing Random",
+        "Basket Random",
+        "Basketball Legends",
+        "Football Legends",
+        "Fireboy And Watergirl",
+        "Fireboy And Watergirl 2",
+        "Fireboy And Watergirl 3",
+        "Fireboy And Watergirl 4"
+    ],
+    "retro_games": [
+        "Tetris",
+        "Super Mario Bros",
+        "Super Mario 64"
+    ],
+    "io_games": [
+
+    ],
+    "flash_games": [
+        "Clicker Heroes",
+        "Fireboy And Watergirl",
+        "Fireboy And Watergirl 2",
+        "Fireboy And Watergirl 3",
+        "Fireboy And Watergirl 4",
+        "Papa's Pizzeria",
+        "Papa's Sushiria",
+        "Papa's Pancakeria",
+        "Papa's Freezeria",
+        "Happy Wheels"
+    ],
+    "sports_games": [
+        "Retro Bowl",
+        "Smash Karts",
+        "Cannon Basketball",
+        "Boxing Random",
+        "Basket Random",
+        "Basketball Legends",
+        "Football Legends",
+        "Flying Car Simulator",
+        "Drive Mad"
+    ],
+    "favourites": [
+
     ]
 }
