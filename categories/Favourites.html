@@ -35,6 +35,40 @@
 
     <script src="../script.js"></script>
     <script>
+        let games_ul = document.getElementById('games-ul');
+
+        function attachEventListeners() {
+            let games_ul = document.getElementById('games-ul');
+            if (!games_ul) {
+                console.log("Games UL not found");
+                return;
+            }
+
+            games_ul.querySelectorAll('li').forEach(game => {
+                let img = game.querySelector('a img');
+                let name = game.querySelector('p');
+
+                img.addEventListener('click', (event) => {
+                    localStorage.setItem('game-title', name.innerText);
+                });
+            });
+        }
+
+        let observer = new MutationObserver((mutationsList, observer) => {
+            for (let mutation of mutationsList) {
+                if (mutation.type === 'childList') {
+                    attachEventListeners();
+                    return;
+                }
+            }
+        });
+
+        if (games_ul) {
+            observer.observe(games_ul, { childList: true });
+        } else {
+            console.log("Games UL not found");
+        }
+
         fetch('../games.json')
             .then(response => {
                 if (!response.ok) {
@@ -43,7 +77,6 @@
                 return response.json();
             })
             .then(data => {
-                let games_ul = document.getElementById('games-ul');
                 let favourites = JSON.parse(localStorage.getItem('favourite_games'));
                 for (let game of favourites)
                 {
