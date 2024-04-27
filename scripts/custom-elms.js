@@ -18,8 +18,8 @@ class MyCustomElement extends HTMLElement {
         z-index: 100;
         ">
         <div id="navbar" style="position: fixed;">
-            <a href="../../index.html" id="home-btn">Home</a>
-            <a href="../../Support.html" id="support-btn">Support Us!</a>
+            <a href="../../index.html" id="home-btn">Home <i class="fa-solid fa-house"></i></a>
+            <a href="../../Support.html" id="support-btn">Support Us! <i class="fa-solid fa-heart" style="color: #ff00bb;"></i></a>
             <div class="dropdown">
                 <button id="dropbtn" class="dropbtn">Categories
                     <img style="width: 10px; margin-left:5px;" id="caret" src="../../icons/caret-down.svg" alt="down">
