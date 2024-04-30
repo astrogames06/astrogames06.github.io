@@ -1,0 +1,12 @@
+{
+"companyName": "Dedalord",
+"productName": "Running Fred",
+"dataUrl": "runningfred-webgl-196_28.data.unityweb?v=1",
+"wasmCodeUrl": "runningfred-webgl-196_28.wasm.code.unityweb?v=1",
+"wasmFrameworkUrl": "runningfred-webgl-196_28.wasm.framework.unityweb?v=1",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000"
+}
