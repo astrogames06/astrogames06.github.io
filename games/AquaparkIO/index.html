@@ -1,50 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2939348888494004"
-     crossorigin="anonymous"></script>
-<head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z22G6D1DRT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>AS | nate-agmes</title>
+    <link href="shared/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="TemplateData56/style.css" />
+    <script src="TemplateData56/UnityProgress.js"></script>
+    <link rel="icon" href="splash.png" />
 
-  gtag('config', 'G-Z22G6D1DRT');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaparkIO</title>
-    <link rel="stylesheet" href="../../style.css">
-    <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="../../astro.jpg">
-</head>
-<body bgcolor="black">
-    <script src="../../custom-elms.js"></script>
-    <nav-bar></nav-bar>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <script src="Build/UnityLoader.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+      window.origBlob = window.Blob;
+      window.Blob = function (array, options) {
+        if (array[1] instanceof Uint8Array) {
+          array[1] = new TextDecoder("utf-8").decode(array[1]).replace(/window\.top\.location\.href|window\.location\.href|document\.referrer|document\.URL/g, '"https://storage.y8.com/"');
+        }
+        return new window.origBlob(array, options);
+      };
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WaterParkSlides3Dx2.json", {
+        onProgress: UnityProgress,
+        Module: {
+          onRuntimeInitialized: function () {
+            UnityProgress(gameInstance, "complete");
+          },
+        },
+      });
+    </script>
+  </head>
 
-    <div style="
-        width: 100%;
-        height: 340px;
-        background-image: url('../../stars.jpg');
-        background-size: cover;
-    ">
-        <h1 style="
-            color: white;
-            text-align: center;
-            font-family: 'Comfortaa', sans-serif;
-            line-height: 340px;
-        ">Aquapark IO</h1>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 100vw; height: 100vh;"></div>
     </div>
-
-    <home-btn></home-btn>
-    <ad></ad>
-    <center>
-        <iframe id="embededGame" style="width: 1280px; height: 786px; border: 0;"
-        src="https://dad1b09d-42dd-4c17-b0ef-910afcfad031.id.repl.co/"></iframe>
-        <opt-elm></opt-elm>
-    </center>
-
-    <script src="../../fullscreen.js"></script>
-</body>
+  </body>
 </html>
