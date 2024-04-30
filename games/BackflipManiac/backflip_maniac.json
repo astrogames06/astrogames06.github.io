@@ -1,0 +1,16 @@
+{
+"companyName": "GameFlare.com",
+"productName": "Backflip Maniac",
+"productVersion": "1.0",
+"dataUrl": "ca98d393e06856be902da652c2ecd194.unityweb",
+"wasmCodeUrl": "a664ccec0ceece2bfcb5cb29d90d5e33.unityweb",
+"wasmFrameworkUrl": "295c95bd58097f1e06cc8bcc75254055.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#F2F6FA",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.17f1"
+}
