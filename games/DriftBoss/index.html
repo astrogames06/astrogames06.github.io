@@ -1,50 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2939348888494004"
-     crossorigin="anonymous"></script>
+<html>
+
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z22G6D1DRT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-Z22G6D1DRT');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DriftBoss</title>
-    <link rel="stylesheet" href="../../style.css">
-    <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="../../astro.jpg">
+	<title>Drift Boss | nate-games</title>
+	<link rel="icon" type="image/x-icon" href="./media/graphics/misc/favicon.ico"> 
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" type="text/css" href="game.css">
+	<script type="text/javascript" src="game.js"></script>
+	
 </head>
-<body bgcolor="black">
-    <script src="../../custom-elms.js"></script>
-    <nav-bar></nav-bar>
 
-    <div style="
-        width: 100%;
-        height: 340px;
-        background-image: url('../../stars.jpg');
-        background-size: cover;
-    ">
-        <h1 style="
-            color: white;
-            text-align: center;
-            font-family: 'Comfortaa', sans-serif;
-            line-height: 340px;
-        ">Drift Boss</h1>
-    </div>
+<body onload="setTimeout(function(){window.scrollTo(0,1)},1);">
 
-    <home-btn></home-btn>
-    <ad-elm></ad-elm>
-    <center>
-        <iframe id="embededGame" style="width: 1280px; height: 786px; border: 0;"
-        src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://738501629-461082748261058427.preview.editmysite.com/uploads/b/139890129-817510652323129407/files/drbo.xml"></iframe>
-        <opt-elm></opt-elm>
-    </center>
+	<div id="ajaxbar">
+		<div id="game"><canvas id="canvas"></canvas></div>
+		<div id="webgl"><canvas id="webglcanvas"></canvas></div>
+		<div id="orientate"><img src="media/graphics/orientate/landscape.jpg"></div>
+		<div id="play" class="play" onclick=""><img src="media/graphics/splash/mobile/cover-start.jpg"></div>
+		<!--<img id="scrollDown" width="220" height="277"></img>-->
+	</div>
 
-    <script src="../../fullscreen.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"7f8dd3e8f99817f0","token":"c843b8c381814d58b40d4597a1bf7962","version":"2023.8.0","si":100}' crossorigin="anonymous"></script>
 </body>
+
 </html>
