@@ -1,50 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2939348888494004"
-     crossorigin="anonymous"></script>
+<html>
+
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z22G6D1DRT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <title>GunSpin</title>
+  <link rel="stylesheet" href="gameloader.css" />
+  <script src="gameloader.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+    .game-footer
+    {
+      opacity: 0;
+      pointer-events: none;
+    }
 
-  gtag('config', 'G-Z22G6D1DRT');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GunSpin</title>
-    <link rel="stylesheet" href="../../style.css">
-    <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="../../astro.jpg">
+    #game-container
+    {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
-<body bgcolor="black">
-    <script src="../../custom-elms.js"></script>
-    <nav-bar></nav-bar>
 
-    <div style="
-        width: 100%;
-        height: 340px;
-        background-image: url('../../stars.jpg');
-        background-size: cover;
-    ">
-        <h1 style="
-            color: white;
-            text-align: center;
-            font-family: 'Comfortaa', sans-serif;
-            line-height: 340px;
-        ">Gun Spin</h1>
-    </div>
-
-    <home-btn></home-btn>
-    <ad-elm></ad-elm>
-    <center>
-        <iframe id="embededGame" style="width: 1280px; height: 786px; border: 0;"
-        src="https://gunspin.runningfred333.repl.co/"></iframe>
-        <opt-elm></opt-elm>
-    </center>
-
-    <script src="../../fullscreen.js"></script>
+<body>
+  <script type="text/javascript">
+    var options = {
+      author: "Vseigru",
+      logo: "logo.jpg",
+      gameName: "GunSpin",
+      gameNameEu: "GunSpin",
+      gameUrl: "",
+      moreLink: (""),
+      allowFullscreen: true,
+      locale: "ru_RU",
+      loader: "5.6.x",
+      loaderOptions: {"moduleJsonUrl": "GunSpin WebGL FinalVersion.json", "unityLoaderUrl": "UnityLoader.js"},
+    };
+    GameInit.load(options);
+  </script>
 </body>
-</html>
+
+</html></a></div>
