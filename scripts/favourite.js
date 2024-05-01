@@ -35,11 +35,3 @@ star_btn.addEventListener('click', () => {
     }
     localStorage.setItem('favourite_games', JSON.stringify(favs));
 });
-
-let flag = document.getElementById('flag-btn');
-
-flag.addEventListener('click', () => {
-    for (let i of favs) {
-        alert(i);
-    }
-});
