@@ -24,6 +24,13 @@ body
 #body-top
 {
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ccc;
+    display: block;
+    z-index: -1;
 }
 
 #top-section
@@ -551,7 +558,7 @@ canvas
     margin-right: auto;
     margin-right: 10px;
     margin-left: 25px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #game-info

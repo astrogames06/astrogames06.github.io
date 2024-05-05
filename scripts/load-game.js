@@ -28,16 +28,15 @@ if (window.location.pathname.endsWith('game.html')) {
     document.title = localStorage.getItem('game-title');
 
     let game_title = document.getElementById('game-title');
-    let game_name = game_title.innerText.split(' ').join('');
-
     game_title.innerText = localStorage.getItem('game-title');
-
     let game_info = document.getElementById('game-info');
     game_info.innerText = localStorage.getItem('game-title');
 
     let game_icon = document.getElementById('game-icon');
     game_icon.src = `games/${game_title.innerText.split(' ').join('')}/icon.png`;
 
+
+    let game_name = game_title.innerText.split(' ').join('');
     let embededGame = document.getElementById('embededGame');
     let canvas = document.getElementsByClassName("#canvas")[0];
 
