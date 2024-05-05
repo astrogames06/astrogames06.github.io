@@ -24,13 +24,6 @@ body
 #body-top
 {
     position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: #ccc; /* Set a background color for the canvas */
-      display: block; /* Removes any default spacing/margin for inline elements */
-      z-index: -1; /* Send the canvas to the background */
 }
 
 #top-section
@@ -66,7 +59,6 @@ h1, h2, h3
     display: flex;
     justify-content: flex-end;
 }
-
 #opt-elm i
 {
     margin-right: 25px;
@@ -542,3 +534,32 @@ canvas
 {
     border-radius: 15px;
 }
+
+#game-info-span
+{
+    margin-right: auto;
+    align-items: center;
+}
+
+
+
+#game-icon
+{
+    margin-right: auto;
+    align-self: center;
+    width: 30px;
+    margin-right: auto;
+    margin-right: 10px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+#game-info
+{
+    margin-right: auto;
+    align-self: center;
+    display: inline;
+    line-height: 50px;
+    font-weight: 900;
+}
+

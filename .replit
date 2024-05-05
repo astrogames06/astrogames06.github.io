@@ -1,6 +1,6 @@
 entrypoint="index.html"
 hidden=[".config"]
-modules = ["web:v2-20230623-0b7a606"]
+modules = ["python-3.10:v25-20230920-d4ad2e4", "web:v2-20230623-0b7a606"]
 
 [nix]
 channel = "stable-23_11"
@@ -8,3 +8,7 @@ channel = "stable-23_11"
 [deployment]
 publicDir = "/"
 deploymentTarget = "static"
+
+[[ports]]
+localPort = 8080
+externalPort = 80
