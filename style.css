@@ -198,7 +198,7 @@ h1, h2, h3
     text-align: center;
     color: white;
     font-size: 50px;
-    
+
 }
 
 #dropbtn img
@@ -337,6 +337,8 @@ p
     margin-right: 25px;
     margin-bottom: 50px;
     display: inline-block;
+    transition: 0.2s;
+    border-radius: 45px;
 }
 
 #games #games-ul li a img
@@ -348,18 +350,20 @@ p
     margin-bottom: 8px;
 }
 
-#games #games-ul li a img:hover
+#games #games-ul li:hover
 {
     transform: scale(1.08);
+    background-color: #2089FC;
 }
 
 #games #games-ul li a:hover {
     color: blue !important;
 }
 
-#games #games-ul li p
+#games #games-ul li a
 {
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .games-ul li a img

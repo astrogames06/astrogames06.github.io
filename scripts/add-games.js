@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     let games_ul = document.getElementById('games-ul');
 
     fetch('games.json')
@@ -22,8 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let p = document.createElement('p');
                 p.innerText = `${game} `;
                 data.hot_games.forEach(hot_game => {
-                    if (game === hot_game)
-                    {
+                    if (game === hot_game) {
                         let icon = document.createElement('i');
 
                         icon.className = 'fa-solid fa-fire';
@@ -32,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 });
 
-                game_li.appendChild(p);
+                game_a.appendChild(p);
 
                 games_ul.appendChild(game_li);
             });

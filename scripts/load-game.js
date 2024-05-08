@@ -7,9 +7,10 @@ function attachEventListeners() {
 
     games_ul.querySelectorAll('li').forEach(game => {
         let img = game.querySelector('a img');
+        let a = game.querySelector('a');
         let name = game.querySelector('p');
 
-        img.addEventListener('click', (event) => {
+        game.addEventListener('click', (event) => {
             localStorage.setItem('game-title', name.innerText);
         });
     });
