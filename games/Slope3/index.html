@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Slope 3</title>
-    <meta name="robots" content="noindex,nofollow" />
-    <script type="text/javascript" src="/cloak.js"></script>
-    <link rel="shortcut icon" sizes="256x256" href="slope3/icon-slope-3.png">
-    <meta name="description" content="Play Slope 3 on TBG95">
-    <script>
-      function UnityCallJs() {
-        console.log("unity call!");
-      }
 
-      function UnityCallEndgameJs() {
-        console.log("untiy call end game");
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Slope 3</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <script type="text/javascript" src="/cloak.js"></script>
+  <link rel="shortcut icon" sizes="256x256" href="slope3/icon-slope-3.png">
+  <meta name="description" content="Play Slope 3 on TBG95">
+  <script>
+    function UnityCallJs() {
+      console.log("unity call!");
+    }
 
-      function UnityCallPlayJs() {
-        console.log("untiy call Play game");
-      }
+    function UnityCallEndgameJs() {
+      console.log("untiy call end game");
+    }
 
-      function UnityCallLeaderboardJs() {
-        console.log("untiy call On Leaderboard");
-      }
+    function UnityCallPlayJs() {
+      console.log("untiy call Play game");
+    }
 
-      function UnityCallAgainJs() {
-        console.log("unity call Again");
-      }
+    function UnityCallLeaderboardJs() {
+      console.log("untiy call On Leaderboard");
+    }
 
-      function UnityCallBackHomeJs() {
-        console.log("untiy call backHome");
-      }
+    function UnityCallAgainJs() {
+      console.log("unity call Again");
+    }
 
-      function UnityCallChangeDayLeaderboardJs() {
-        console.log("untiy call change day leaderboard");
-      }
+    function UnityCallBackHomeJs() {
+      console.log("untiy call backHome");
+    }
 
-      function UnityCallCloseLeaderboardJs() {
-        console.log("untiy call close leaderboard");
-      }
-    </script>
-    <style>
-       * {
+    function UnityCallChangeDayLeaderboardJs() {
+      console.log("untiy call change day leaderboard");
+    }
+
+    function UnityCallCloseLeaderboardJs() {
+      console.log("untiy call close leaderboard");
+    }
+  </script>
+  <style>
+    * {
       padding: 0;
       margin: 0;
     }
@@ -61,10 +62,9 @@
       height: 616px;
     }
 
-    #canvas
-    {
-      width: 1080px;
-      height: 616px;
+    #canvas {
+      width: 1080px !important;
+      height: 616px !important;
     }
 
     #unity-loading-bar {
@@ -88,42 +88,42 @@
       border-radius: 10px;
       transition: 400ms linear;
     }
+  </style>
 
-    </style>
+</head>
 
-  </head>
-  <body>
+<body>
 
-    <div id="unity-container"></div>
-	  <div id="unity-loading-bar">
-		<div id="unity-progress-bar">
-		</div>
-	  </div>
-    
-  </body>
-  <script src="Build/UnityLoader.js"></script>
-  <script>
-    const maxPixelRatioMobile = 2.0;
-    const maxPixelRatioDesktop = 1.5;
+  <div id="unity-container"></div>
+  <div id="unity-loading-bar">
+    <div id="unity-progress-bar">
+    </div>
+  </div>
 
-    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    var maxDevicePixelRatio = isMobile? maxPixelRatioMobile: maxPixelRatioDesktop;
-    var pixelRatio = Math.min(window.devicePixelRatio, maxDevicePixelRatio);
-    
-    var loadingBar = document.querySelector("#unity-loading-bar");
-    var progressBar = document.querySelector("#unity-progress-bar");
-	
+</body>
+<script src="Build/UnityLoader.js"></script>
+<script>
+  const maxPixelRatioMobile = 2.0;
+  const maxPixelRatioDesktop = 1.5;
 
-    var unityInstance = UnityLoader.instantiate("unity-container", "Build/Slope3.json", {onProgress: UnityProgress});
-    
-    function UnityProgress(unityInstance, progress) {
-      if(unityInstance.progress < 1) {
-        progressBar.style.width = 100 * progress + "%";
-      }
-      else {
-        loadingBar.style.display = "none";
-      }
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  var maxDevicePixelRatio = isMobile ? maxPixelRatioMobile : maxPixelRatioDesktop;
+  var pixelRatio = Math.min(window.devicePixelRatio, maxDevicePixelRatio);
+
+  var loadingBar = document.querySelector("#unity-loading-bar");
+  var progressBar = document.querySelector("#unity-progress-bar");
+
+
+  var unityInstance = UnityLoader.instantiate("unity-container", "Build/Slope3.json", {onProgress: UnityProgress});
+
+  function UnityProgress(unityInstance, progress) {
+    if (unityInstance.progress < 1) {
+      progressBar.style.width = 100 * progress + "%";
     }
-  </script>
+    else {
+      loadingBar.style.display = "none";
+    }
+  }
+</script>
 
 </html>
