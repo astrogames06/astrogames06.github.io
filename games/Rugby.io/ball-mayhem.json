@@ -1,0 +1,12 @@
+{
+"companyName": "Rugby.io - Ball Mayhem",
+"productName": "Rugby.io - Ball Mayhem",
+"dataUrl": "ball-mayhem.data.unityweb",
+"wasmCodeUrl": "ball-mayhem.wasm.code.unityweb",
+"wasmFrameworkUrl": "ball-mayhem.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
