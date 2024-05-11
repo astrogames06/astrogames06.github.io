@@ -84,7 +84,7 @@
                 let games_ul = document.getElementById('games-ul')
                 data.games.forEach(game => {
                     let game_name = game.split(' ').join('');
-                    if (game_name.includes('io')) {
+                    if (game_name.includes('.io')) {
                         let game_li = document.createElement('li');
                         let game_a = document.createElement('a');
                         game_a.href = '../game.html';
