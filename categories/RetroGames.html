@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,13 @@
     <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
     <script src="../scripts/custom-elms.js"></script>
 </head>
+
 <body style="background-color: rgb(19, 19, 19);">
     <script src="custom-elms.js"></script>
     <nav-bar></nav-bar>
     <br>
     <center>
-    <h1 style="
+        <h1 style="
         margin-top: 50px;
         background-color: rgb(41, 41, 41);
         width: 350px;
@@ -22,16 +24,17 @@
         border-radius: 25px;
     ">Retro Games <i class="fa-solid fa-ghost"></i></h1>
 
-    <input type="text" id="search-bar" placeholder="Search games..." oninput="search()" style="margin-bottom: 50px;">
+        <input type="text" id="search-bar" placeholder="Search games..." oninput="search()"
+            style="margin-bottom: 50px;">
 
 
-    <div id="games">
-        <ul class="games-ul" id="games-ul">
-            
+        <div id="games">
+            <ul class="games-ul" id="games-ul">
 
-        </ul>
-    </div>
-    <terms-elm></terms-elm>
+
+            </ul>
+        </div>
+        <terms-elm></terms-elm>
     </center>
 
     <script src="../script.js"></script>
@@ -65,7 +68,7 @@
         });
 
         if (games_ul) {
-            observer.observe(games_ul, { childList: true });
+            observer.observe(games_ul, {childList: true});
         } else {
             console.log("Games UL not found");
         }
@@ -96,8 +99,7 @@
                     let p = document.createElement('p');
                     p.innerText = `${game} `;
                     data.hot_games.forEach(hot_game => {
-                        if (game === hot_game)
-                        {
+                        if (game === hot_game) {
                             let icon = document.createElement('i');
 
                             icon.className = 'fa-solid fa-fire';
@@ -106,7 +108,7 @@
                         }
                     });
 
-                    game_li.appendChild(p);
+                    game_a.appendChild(p);
 
                     games_ul.appendChild(game_li);
                 });
@@ -116,4 +118,5 @@
             });
     </script>
 </body>
+
 </html>
