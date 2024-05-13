@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-class MyCustomElement extends HTMLElement {
-    constructor() {
-        super();
-        console.log('MyCustomElement constructor');
+    class MyCustomElement extends HTMLElement {
+        constructor() {
+            super();
+            console.log('MyCustomElement constructor');
 
-        const shadowRoot = this.attachShadow({ mode: 'open' });
-        shadowRoot.innerHTML = `
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            shadowRoot.innerHTML = `
         <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
         <script src="script.js"></script>
         <link rel="stylesheet" href="../style.css">
@@ -19,7 +19,7 @@ class MyCustomElement extends HTMLElement {
         ">
         <div id="navbar" style="position: fixed;">
             <a href="../../index.html" id="home-btn">Home <i class="fa-solid fa-house"></i></a>
-            <a href="../../Support.html" id="support-btn">Support Us! <i class="fa-solid fa-heart" style="color: #ff00bb;"></i></a>
+            <a href="../pages/Support.html" id="support-btn">Support Us! <i class="fa-solid fa-heart" style="color: #ff00bb;"></i></a>
             <div class="dropdown">
                 <button id="dropbtn" class="dropbtn">Categories
                     <img style="width: 10px; margin-left:5px;" id="caret" src="../../icons/caret-down.svg" alt="down">
@@ -64,15 +64,15 @@ class MyCustomElement extends HTMLElement {
         <img src="../../astro.jpg" alt="astro" style="width: 50px; position: fixed; top: 0; left: 0;">
         </div>
         `;
+        }
     }
-}
-customElements.define('nav-bar', MyCustomElement);
+    customElements.define('nav-bar', MyCustomElement);
 
-class MyCustomElementAd extends HTMLElement {
-    constructor() {
-        super();
-        const shadowRoot = this.attachShadow({ mode: 'open' });
-        shadowRoot.innerHTML = `
+    class MyCustomElementAd extends HTMLElement {
+        constructor() {
+            super();
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            shadowRoot.innerHTML = `
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2939348888494004"
         crossorigin="anonymous"></script>
         <!-- sides of games -->
@@ -86,15 +86,15 @@ class MyCustomElementAd extends HTMLElement {
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
         `;
+        }
     }
-}
-customElements.define('ad-elm', MyCustomElementAd);
+    customElements.define('ad-elm', MyCustomElementAd);
 
-class MyCustomElementTerms extends HTMLElement {
-    constructor() {
-        super();
-        const shadowRoot = this.attachShadow({ mode: 'open' });
-        shadowRoot.innerHTML = `
+    class MyCustomElementTerms extends HTMLElement {
+        constructor() {
+            super();
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            shadowRoot.innerHTML = `
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../legal/legal.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -115,15 +115,15 @@ class MyCustomElementTerms extends HTMLElement {
         </div>
 
         `;
+        }
     }
-}
-customElements.define('terms-elm', MyCustomElementTerms);
+    customElements.define('terms-elm', MyCustomElementTerms);
 
-class MyCustomElementOpt extends HTMLElement {
-    constructor() {
-        super();
-        const shadowRoot = this.attachShadow({ mode: 'open' });
-        shadowRoot.innerHTML = `
+    class MyCustomElementOpt extends HTMLElement {
+        constructor() {
+            super();
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            shadowRoot.innerHTML = `
         <script src="https://kit.fontawesome.com/7d33d53aa9.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../../style.css">
         <center>
@@ -148,15 +148,15 @@ class MyCustomElementOpt extends HTMLElement {
         " src="../../icons/expand.svg"></i></div>
         </center>
         `;
+        }
     }
-}
-customElements.define('opt-elm', MyCustomElementOpt);
+    customElements.define('opt-elm', MyCustomElementOpt);
 
-class MyCustomElementHome extends HTMLElement {
-    constructor() {
-        super();
-        const shadowRoot = this.attachShadow({ mode: 'open' });
-        shadowRoot.innerHTML = `
+    class MyCustomElementHome extends HTMLElement {
+        constructor() {
+            super();
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            shadowRoot.innerHTML = `
         <link rel="stylesheet" href="../../style.css">
         <a href="../../index.html" style="
             color: rgb(0, 0, 0);
@@ -180,8 +180,8 @@ class MyCustomElementHome extends HTMLElement {
         </button></center>
         </a>
         `;
+        }
     }
-}
-customElements.define('home-btn', MyCustomElementHome);
+    customElements.define('home-btn', MyCustomElementHome);
 
 });
