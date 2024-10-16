@@ -4,15 +4,6 @@ document.getElementById('down').onclick = function (e) {
     smoothScroll('games');
 };
 
-window.onload = function() {
-	let alertShown = localStorage.getItem('msg0');
-	
-	if (!alertShown) {
-	    alert("Tomb of the mask, mario, mario64, bottle flip 3d, subway surfers, tetris, n-gon, slope, vex-6 and bitlife and now fixed!");
-	    localStorage.setItem('msg0', 'true');
-	}
-}
-
 function smoothScroll(targetId) {
     const targetSection = document.getElementById(targetId);
     const targetPosition = targetSection.offsetTop;
