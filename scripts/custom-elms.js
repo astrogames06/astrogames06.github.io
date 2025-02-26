@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         z-index: 100;
         ">
         <div id="navbar" style="position: fixed;">
-            <a href="../../index.html" id="home-btn">Home <i class="fa-solid fa-house"></i></a>
+            <a href="../../games.html" id="home-btn">Home <i class="fa-solid fa-house"></i></a>
             <a href="../pages/Support.html" id="support-btn">Support Us! <i class="fa-solid fa-heart" style="color: #ff00bb;"></i></a>
             <div class="dropdown">
                 <button id="dropbtn" class="dropbtn">Categories
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <a href="../../legal/terms-of-service.html">Terms Of Service <i class="fa-solid fa-arrow-right-from-bracket"></i></i></a>
             <br>
             <br>
-            <a href="../../index.html">Back Home <i class="fa-solid fa-arrow-right-from-bracket"></i></i></a>
+            <a href="../../games.html">Back Home <i class="fa-solid fa-arrow-right-from-bracket"></i></i></a>
           </p>
         </div>
 
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const shadowRoot = this.attachShadow({ mode: 'open' });
             shadowRoot.innerHTML = `
         <link rel="stylesheet" href="../../style.css">
-        <a href="../../index.html" style="
+        <a href="../../games.html" style="
             color: rgb(0, 0, 0);
             text-decoration: none;
             width: 300px;
