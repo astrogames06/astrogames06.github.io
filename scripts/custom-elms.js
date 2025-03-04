@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const shadowRoot = this.attachShadow({ mode: 'open' });
             shadowRoot.innerHTML = `
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2939348888494004"
-        crossorigin="anonymous"></script>
+     crossorigin="anonymous"></script>
         <!-- sides of games -->
         <ins class="adsbygoogle"
             style="display:block"
