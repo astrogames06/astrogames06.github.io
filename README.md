@@ -2,7 +2,7 @@
 
 Astro Games is a fun website with a variety of games, featuring a clean Ul for easy navigation.
 
-[astrogames06.github.io](https://astro-games.xyz)
+[astro-games.xyz](https://astro-games.xyz)
 
 <br> <br>
 <a href="https://discord.com/invite/MyZCWQM94A">
