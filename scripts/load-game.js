@@ -50,6 +50,8 @@ if (window.location.pathname.endsWith('game.html')) {
             let game = data.find(item => item.game_name === game_title_item);
             if (game) {
                 console.log(game.description);
+                let description_p = document.getElementById('description-p');
+                description_p.innerText = game.description;
             } else {
                 console.log("GAME NOT FOUND.")
                 console.log(game_name);
