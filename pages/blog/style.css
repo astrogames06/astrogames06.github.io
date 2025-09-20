@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Inter:wght@100&family=Maven+Pro&family=Pixelify+Sans&display=swap');
+
+*
+{
+    font-family: 'Comfortaa', sans-serif;
+    color: white;
+}
+
+body
+{
+    background-color: black;
+}
+
+.article-text
+{
+    padding: 15px 15px 15px 15px;
+    background-color: rgb(47, 47, 47);
+    border-radius: 25px;
+}
+
+#title {
+    height: 50px;
+    font-family: 'Pixelify Sans', sans-serif;
+
+    text-align: center;
+    color: white;
+    font-size: 50px;
+
+}
+
+#astro {
+    /* margin-bottom: 100px; */
+    position: relative;
+    margin-right: 50px;
+}
+
+.articles-list
+{
+    background-color: rgb(42, 42, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.article
+{
+    width: 50%;
+    background-color: rgb(53, 53, 53);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center; /* vertical align */
+    justify-content: center;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.article-icon
+{
+    width: 15%;
+    height: 15%;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.article-name
+{
+    margin-left: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+.back-btn
+{
+    background-color: white;
+    color: black;
+    font-size: 50px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+}
