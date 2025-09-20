@@ -47,15 +47,13 @@ if (window.location.pathname.endsWith('game.html')) {
     fetch('descrip.json')
         .then(response => response.json())
         .then(data => {
-            let game = data.find(item => item.game_name === game_title_item);
+            let game = data.find(item => item.game_name.trim().toLowerCase() === game_title_item.trim().toLowerCase());
             if (game) {
                 console.log(game.description);
                 let description_p = document.getElementById('description-p');
                 description_p.innerText = game.description;
             } else {
-                console.log("GAME NOT FOUND.")
-                console.log(game_name);
-                console.log("Game not found.");
+                console.log("GAME NOT FOUND:", `"${game_title_item}"`);
             }
         })
         .catch(error => console.error("Error loading JSON:", error));
