@@ -4,18 +4,6 @@ document.getElementById('down').onclick = function (e) {
     smoothScroll('games');
 };
 
-function runOnce() {
-  if (localStorage.getItem("alreadyRan")) return; // stop if already done
-
-	if (confirm("Please sign the petition!")) {
-		window.location.href = "https://www.ipetitions.com/petition/stop-the-timetable-change";
-	}
-
-  localStorage.setItem("alreadyRan", "true");
-}
-
-runOnce();
-
 function smoothScroll(targetId) {
     const targetSection = document.getElementById(targetId);
     const targetPosition = targetSection.offsetTop;
