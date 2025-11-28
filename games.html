@@ -121,19 +121,6 @@
     <script src="scripts/add-games.js"></script>
     <script src="scripts/fullscreen.js"></script>
     <script src="scripts/script.js"></script>
-    <script>
-      function runOnce() {
-        if (localStorage.getItem("alreadyRan")) return; // stop if already done
-      
-      	if (confirm("Please sign the petition!")) {
-      		window.location.href = "https://www.ipetitions.com/petition/stop-the-timetable-change";
-      	}
-      
-        localStorage.setItem("alreadyRan", "true");
-      }
-      
-      runOnce();
-    </script>
   </div>
 </body>
 
