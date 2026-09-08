@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" version="1.1" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="linearGradient1250" x1="21.99" x2="663.19" y1="452.96" y2="452.96" gradientTransform="matrix(1.4733 0 0 .70573 -32.397 -653.16)" gradientUnits="userSpaceOnUse" spreadMethod="repeat">
+   <stop stop-color="#f00" offset="0"/>
+   <stop stop-color="#0f0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient3099" x1="21.99" x2="663.19" y1="452.96" y2="452.96" gradientTransform="matrix(1.4733 0 0 .3136 -32.397 -979.88)" gradientUnits="userSpaceOnUse" spreadMethod="repeat">
+   <stop stop-color="#f00" offset="0"/>
+   <stop stop-color="#0f0" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g stroke-width="0">
+  <rect x="247.27" y="952.86" width="165" height="65.849" fill="#14ec00"/>
+  <rect x="757.21" y="222.44" width="161.1" height="65.921" fill="#986700"/>
+  <rect x="664.55" y="289.61" width="117.41" height="117.95" fill="#5a0"/>
+  <rect x="888.93" y="289.61" width="117.41" height="117.95" fill="#5a0"/>
+  <path transform="rotate(90)" d="m0-699.33h213.63v-277.02h-213.63v277.02z" fill="url(#linearGradient3099)"/>
+  <rect transform="rotate(90)" x="-1.3323e-14" y="-645.2" width="944.66" height="623.41" fill="url(#linearGradient1250)"/>
+ </g>
+ <g fill-opacity=".25" stroke="#000">
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024" fill="#141414"/>
+  <polygon points="-2e-3 1024 -2e-3 1024" fill="#141414"/>
+  <polygon points="-2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024"/>
+  <g fill="#141414">
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+  </g>
+  <polygon points="-2e-3 1024 -2e-3 1024"/>
+  <g fill="#141414">
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+  </g>
+  <polygon points="-2e-3 1024 -2e-3 1024"/>
+  <g fill="#141414">
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+  </g>
+  <polygon points="-2e-3 1024 -2e-3 1024"/>
+  <g fill="#141414">
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+   <polygon points="-2e-3 1024 -2e-3 1024"/>
+  </g>
+  <g fill="#1a0000">
+   <polygon points="-2e-3 1024"/>
+   <polygon points="0 1024"/>
+   <polygon points="-2e-3 1024"/>
+   <polygon points="0 1024"/>
+   <polygon points="0 1024"/>
+  </g>
+ </g>
+</svg>

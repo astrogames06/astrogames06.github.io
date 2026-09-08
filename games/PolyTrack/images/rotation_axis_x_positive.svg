@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="28" height="28" version="1.1" viewBox="0 0 7.4083 7.4083" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(.079375 .13229)">
+  <g transform="translate(.5291 .52917)">
+   <path d="m3.175 1.0583v2.1167" fill="none" stroke="#000" stroke-width=".26458"/>
+   <g>
+    <circle cx="3.175" cy=".79375" r=".79375"/>
+   </g>
+  </g>
+  <g transform="translate(.5291 .52917)">
+   <path d="m3.175 3.175v2.1167" fill="none" stroke="#000" stroke-width=".26458"/>
+   <circle cx="3.175" cy="5.5563" r=".79375"/>
+  </g>
+  <g transform="rotate(65 3.0217 3.8449)">
+   <path d="m3.175 1.0583v2.1167" fill="none" stroke="#000" stroke-width=".265"/>
+   <g>
+    <circle cx="3.175" cy=".79375" r=".79375"/>
+   </g>
+  </g>
+  <g transform="translate(.5291 .52917)">
+   <path d="m3.143 3.1955-1.9184 0.89454" fill="none" stroke="#000" stroke-width=".26458"/>
+   <circle transform="rotate(65)" cx="4.2244" cy=".88321" r=".79375"/>
+  </g>
+  <g transform="rotate(-65 3.8304 3.0199)">
+   <path d="m3.175 3.175v2.1167" fill="none" stroke="#000" stroke-width=".265"/>
+   <circle cx="3.175" cy="5.5563" r=".79375"/>
+  </g>
+  <g transform="rotate(-65 3.8352 3.0123)">
+   <path d="m3.175 1.0583v2.1167" fill="none" stroke="#000" stroke-width=".26458"/>
+   <g>
+    <circle cx="3.175" cy=".79375" r=".79375"/>
+   </g>
+  </g>
+  <circle cx="3.7041" cy="3.7042" r=".39687" stroke-width="1.0001"/>
+ </g>
+ <g transform="translate(.5291 .52917)">
+  <path d="m3.175 1.0583v2.1167" fill="none" stroke="#0d260d" stroke-width=".26458"/>
+  <circle cx="3.175" cy=".79375" r=".79375" fill="#0d260d"/>
+  <rect x="2.6458" y=".66146" width="1.0583" height=".26458"/>
+  <rect x="3.0427" y=".26458" width=".26458" height="1.0583"/>
+ </g>
+ <g transform="translate(.5291 .52917)">
+  <path d="m3.175 3.175v2.1167" fill="none" stroke="#0d260d" stroke-width=".26458"/>
+  <circle cx="3.175" cy="5.5563" r=".79375" fill="#0d260d"/>
+  <rect x="2.6458" y="5.424" width="1.0583" height=".26458"/>
+ </g>
+ <g transform="rotate(65 3.0217 3.8449)">
+  <path d="m3.175 1.0583v2.1167" fill="none" stroke="#f00" stroke-width=".265"/>
+  <circle cx="3.175" cy=".79375" r=".79375" fill="#f00"/>
+  <rect transform="rotate(-65)" x=".093264" y="3.0807" width="1.0583" height=".26458"/>
+  <rect transform="rotate(-65)" x=".49014" y="2.6838" width=".26458" height="1.0583"/>
+ </g>
+ <g transform="translate(.5291 .52917)">
+  <path d="m3.143 3.1955-1.9184 0.89454" fill="none" stroke="#260d0d" stroke-width=".26458"/>
+  <circle transform="rotate(65)" cx="4.2244" cy=".88321" r=".79375" fill="#260d0d"/>
+  <rect x=".4557" y="4.0696" width="1.0583" height=".26458"/>
+ </g>
+ <g transform="rotate(-65 3.8304 3.0199)">
+  <path d="m3.175 3.175v2.1167" fill="none" stroke="#0d1726" stroke-width=".265"/>
+  <circle cx="3.175" cy="5.5563" r=".79375" fill="#0d1726"/>
+  <rect transform="rotate(65)" x="5.8483" y="-.66165" width="1.0583" height=".26458"/>
+ </g>
+ <g transform="rotate(-65 3.8352 3.0123)">
+  <path d="m3.175 1.0583v2.1167" fill="none" stroke="#0d1726" stroke-width=".26458"/>
+  <circle cx="3.175" cy=".79375" r=".79375" fill="#0d1726"/>
+  <rect transform="rotate(65)" x="1.532" y="-2.6744" width="1.0583" height=".26458"/>
+  <rect transform="rotate(65)" x="1.9289" y="-3.0712" width=".26458" height="1.0583"/>
+ </g>
+ <circle cx="3.7041" cy="3.7042" r=".39687" fill="#ff8080"/>
+</svg>

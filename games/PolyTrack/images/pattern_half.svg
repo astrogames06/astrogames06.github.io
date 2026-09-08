@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" version="1.1" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+ <rect x="-2.8422e-14" y="5.6843e-14" width="1024" height="1024" fill="#f00" stroke-width="1.1169"/>
+ <g fill="#0f0">
+  <rect x="831.98" y="60.041" width="156.22" height="113.29"/>
+  <rect x="837.84" y="216.1" width="171.55" height="192.37"/>
+  <rect x="329.77" width="297.68" height="1024"/>
+ </g>
+ <g fill-opacity=".25" stroke="#000">
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024 -2e-3 1024" fill="#141414"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024" fill="#141414"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+ </g>
+ <g fill="#141414" fill-opacity=".25" stroke="#000">
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+ </g>
+ <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024" fill-opacity=".25" stroke="#000"/>
+ <g fill="#141414" fill-opacity=".25" stroke="#000">
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+ </g>
+ <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024" fill-opacity=".25" stroke="#000"/>
+ <g fill="#141414" fill-opacity=".25" stroke="#000">
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+ </g>
+ <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024" fill-opacity=".25" stroke="#000"/>
+ <g fill="#141414" fill-opacity=".25" stroke="#000">
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024 -2e-3 1024"/>
+ </g>
+ <g fill="#1a0000" fill-opacity=".25" stroke="#000">
+  <polygon points="-2e-3 1024 -2e-3 1024"/>
+  <polygon points="0 1024 0 1024"/>
+  <polygon points="-2e-3 1024 -2e-3 1024"/>
+  <polygon points="0 1024 0 1024"/>
+  <polygon points="0 1024 0 1024"/>
+ </g>
+</svg>
